@@ -1,0 +1,246 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb, graphicx, geometry,setspace,color,here,caption}
+\graphicspath{ {./images/} }
+\begin{document}
+
+
+\begin{center}\begin{spacing}{1.5}
+    \centering
+    {\LARGE 令和6年度 修士論文予備審査資料\\}
+    \vspace*{\fill} % 上部の空白
+    {\LARGE 画像処理と次数制約付き最小全域木に基づく細胞系統擬似時間の予測手法の改良\\}
+    \vspace*{\fill}
+    {\LARGE 情報学研究科 知能情報学専攻 修士課程\\指導教員: 阿久津 達也 教授\\学生番号: 6930-35-1192 \\ 岩城 拓磨 \\}
+\end{spacing}\end{center}
+\pagebreak
+\begin{center}
+    \centering
+    {\LARGE 画像処理と次数制約付き最小全域木に基づく細胞系統擬似時間の予測手法の改良\\}
+\end{center}
+学生番号: 6930-35-1192\\氏名: 岩城 拓磨 \\ 指導教員: 阿久津 達也 教授
+\section*{研究概要}
+細部の分化経路を推定するために使用される細胞系統擬似時間(細胞集団に含まれるさまざまな時間経過の細胞に対応する疑似的な時間)解析の手法であるslingshot[2]の改良を目的に本研究に取り組んでいる。\\
+本研究の入力データは細胞のRNAシーケンスデータをUmap等で2次元データに次元削減した後のデータである。\\
+2次元の入力データを二値画像として認識し、画像のアウトラインを細線化することで大まかな木構造を取得する。その木構造の分岐点と葉点を初期重心として入力データをKmeansでクラスタリングする。\\
+クラスタリングした重心の距離行列を無向グラフGとして、以下の次数制約付き最小全域木を細胞系統樹とした。
+\begin{itemize}\begin{spacing}{1.3}
+    \item 次数制約付き最小全域木の定式化\\
+    無向グラフG\\
+    \ \ \ \ \ \ $G = (V,E)$\\
+    グラフGの頂点集合\\
+    \ \ \ \ \ \ $i,j\in V$\\
+    グラフGの辺集合\\
+    \ \ \ \ \ \ ${(i,j)}\in E,e\in E$\\
+    各辺$e\in E$ の長さ\\
+    \ \ \ \ \ \ $d_e$\\
+    minimize\ \ \ \ \sum_{e\in E}d_ex_e\\
+    s.t. \ \ \ \ \ \ \ \ \ \ \ \sum_{e\in E}x_e = |V| - 1\\
+    \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \sum_{e\in \delta(\{i\})}x_e \leqq 3\ \ \ \ \ \ \forall i \in V\\
+    \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \sum_{i\in S} \sum_{j\in V\backslash S}x_{ij}\geqq 1\ \ \ \ \ \ \forall S \subset V\\
+    \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ x_e:\{0,1\}\ \ \ \ \ \ \forall e \in E
+\end{spacing}\end{itemize}
+\begin{itemize}
+    \item 進捗状況\\
+    進捗状況として、先行研究で使用されているDNAバーコーディングを使用したHematopoiesis dataset[1]に対して本研究の提案手法を実施した結果、DNAバーコーディング情報無しで約60\%の確率で細胞クラスタの分岐を認識することができた。
+\end{itemize}
+\pagebreak
+\renewcommand{\contentsname}{目次}
+\tableofcontents
+\pagebreak
+\section{序論}
+\subsection{背景}
+細胞が特定の機能を持つ専門的な細胞へと発展していく分化のプロセスは発生生物学や再生医療の根幹であり、細胞の運命決定や発生段階の特定は個々の細胞の動的な振る舞いを理解するために不可欠である。\\しかし、実験的に細胞のリアルタイム追跡を行うことは難しく、時間軸に沿ったデータを得るには限界がある。\\細胞の分化プロセスを解析する手法として、細胞擬似時間解析がある。\\細胞擬似時間解析は、単一細胞RNAシーケンシング（scRNA-seq）データを用いて細胞の発生や分化の過程を時系列的に再構築する手法である。\\細胞擬似時間解析のさまざまな手法が開発されているが、それらの手法は細胞は一度に3つ以上に分裂しないという生物学的な前提を無視している。\\scRNA-seqデータを生物学に沿った形で解釈するために開発手法の改良が必要である。
+
+\subsection{目的}
+細胞擬似時間解析の手法にはSlingshot[2]がある。\\Slingshotはクラスタリングされた低次元データを入力データとし、入力データに対して最小全域木を構築し細胞擬似時間を決定する。\\しかし本手法は細胞が3つ以上に分裂しないという生物学的前提を考慮しておらず、意図しない分岐を認識する可能性が高い。データのクラスタリングは細胞擬似時間決定に最重要な情報であるが、本手法に最適な方法には言及されていない。\\
+より厳密な細胞擬似時間解析のために、クラスタリングアルゴリズムの提案と細胞クラスタが3つ以上に分岐しないという制約を追加することによって性能向上に取り組んだ。
+
+\section{データ}
+\subsection{データセット}
+高次元であるscRNA-seqデータをumap等で２次元に次元圧縮したデータを使用する。\\Hematopoiesis datasets[3]に対してcospar[2]を使用してDNAバーコードとscRNA-seqデータを統合して動的推論を実行した結果を使用する。データ数が49116の２次元データである。\\本研究の提案手法の推定時には次元削減したscRNA-seqデータのみを使用し、検証時には系統情報も含んだデータを使用する。
+
+\begin{center}\begin{minipage}[t]{0.7\textwidth}
+    \includegraphics[width=\textwidth,keepaspectratio]{images/eps/Hematopoiesis_data_labeled.eps}
+    \renewcommand{\thefigure}{1-1}
+    \captionsetup{justification=raggedright}
+    \captionof{figure}{Hematopoiesis datasets[3]を２次元に次元圧縮した散布図。DNAバーコーディングによって取得された細胞クラスタの状態によって色分けされている。}
+\end{minipage}\end{center}
+
+\begin{center}\begin{minipage}[t]{0.7\textwidth}
+\centering
+    \includegraphics[width=\textwidth,keepaspectratio]{images/eps/Hematopoiesis_tree.eps}
+    \renewcommand{\thefigure}{1-2}
+    \captionsetup{justification=raggedright}
+    \captionof{figure}{cospar[2]を使用してHematopoiesis datasets[3]の細胞クラスタの系統樹推論した結果。}
+\end{minipage}\end{center}
+
+
+\section{解析手法}
+\subsection{画像処理}
+以下の手順で入力データの輪郭を取得する。
+\begin{enumerate}
+    \item 2次元のscRNA-seqデータをヒストグラムを使用してNxNの２値画像に変換する。
+    \item NxNにしたデータにガウシアンフィルタを適応してデータ平滑化する。
+    \item 孤立した点や小さい穴などの不要な部分を削除する。
+\end{enumerate}
+
+\begin{minipage}[t]{0.45\textwidth}
+    \includegraphics[width=\textwidth,keepaspectratio]{images/eps/Hematopoiesis_data.eps}
+    \renewcommand{\thefigure}{2-1}
+    \captionsetup{justification=raggedright}
+    \captionof{figure}{Hematopoiesis datasets[3]の散布図。入力データとしてDNAバーコーディングの情報は使用しない。}
+\end{minipage}
+\hspace{0.05\textwidth}
+\begin{minipage}[t]{0.45\textwidth}
+    \includegraphics[width=\textwidth,keepaspectratio]{images/eps/Hematopoiesis_img.eps}
+    \renewcommand{\thefigure}{2-2}
+    \captionsetup{justification=raggedright}
+    \captionof{figure}{画像処理後の入力データの輪郭。本研究では100x100の2値画像に変換した。 }
+\end{minipage}
+
+\subsection{重心点の取得}
+以下の手順で細線化処理で入力データの輪郭を細線化し、クラスタリング時に使用する重心点を取得する。
+\begin{enumerate}
+    \item 細線化処理で入力データの輪郭を細線化する。
+    \item 細線化処理によって取得した木構造の分岐点と葉の座標点をプロットする。
+    \item プロットした分岐点と葉の座標点のうち近すぎる点を削除し、残った点を重心点として使用する。
+\end{enumerate}
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.45\textwidth,keepaspectratio]{images/eps/Hematopoiesis_skelton.eps}
+\captionsetup{width=0.6\textwidth}
+\renewcommand{\thefigure}{3-1}
+\captionsetup{justification=raggedright}
+\caption{赤い点が輪郭の細線化で取得した木構造の分岐点と葉のプロット。}
+\end{figure}
+
+\begin{itemize}
+    \item 細線化処理\\
+    細線化処理は二値画像を幅1ピクセルの線画像に変換する処理である。以下の3つが一致した画素を削る処理である。
+    \begin{enumerate}
+        \item 境界上の白画素。
+        \item 削っても連結性が保たれる。
+        \item 端点でない。
+    \end{enumerate}
+    \\細長い部分や枝分かれが激しい構造はその構造が保存されやすい特性がある。\\２値画像の輪郭内部の骨格のような木構造を取得できる。
+\end{itemize}
+\pagebreak
+\subsection{次数制約付き最小全域木}
+初期重心点を指定して入力データをKmeansでクラスタリングを行う。クラスタの重心をノードとして、マハラビノビス距離に基づいて次数制約付き最小全域木を構築する。これが細胞クラスタの分化経路であると推定する。\\細胞クラスタが3つ以上のクラスタに分岐しないように次数を3以下に制限している。
+\begin{itemize}\begin{spacing}{1.3}
+    \item 次数制約付き最小全域木の定式化\\
+    無向グラフG\\
+    \ \ \ \ \ \ $G = (V,E)$\\
+    グラフGの頂点集合\\
+    \ \ \ \ \ \ $i,j\in V$\\
+    グラフGの辺集合\\
+    \ \ \ \ \ \ ${(i,j)}\in E,e\in E$\\
+    各辺$e\in E$ の長さ\\
+    \ \ \ \ \ \ $d_e$\\
+    minimize\ \ \ \ \sum_{e\in E}d_ex_e\\
+    s.t. \ \ \ \ \ \ \ \ \ \ \ \sum_{e\in E}x_e = |V| - 1\\
+    \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \sum_{e\in \delta(\{i\})}x_e \leqq 3\ \ \ \ \ \ \forall i \in V\\
+    \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \sum_{i\in S} \sum_{j\in V\backslash S}x_{ij}\geqq 1\ \ \ \ \ \ \forall S \subset V\\
+    \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ x_e:\{0,1\}\ \ \ \ \ \ \forall e \in E
+\end{spacing}\end{itemize}
+\section{結果}
+次数制約を追加することで分岐認識能力が10\%向上した。\\
+次数制約無しMSTでは50\%の分岐の認識できた。次数制約付きMSTでは約60\%の分岐を認識できた。\\
+次数制約無しMSTでは、Meg,Erythroid,Mastが同一のノードから分岐し、1つの細胞クラスタが3つの細胞クラスタへと分化した。次数制約付きMSTではMeg,Erythroid,Mastの分岐を適切に認識できた。
+
+\begin{figure}[h]
+\centering
+    \includegraphics[width=0.8\textwidth,keepaspectratio]{images/eps/Hematopoiesis_tree_data_labeled.eps}
+\renewcommand{\thefigure}{4-1}
+\captionsetup{width=0.6\textwidth}
+    \captionsetup{justification=raggedright}
+    \caption{Hematopoiesis datasets[3] を２次元に次元圧縮した散布図にcospar[2] を使用して推論した系統樹を加筆した図。}
+\end{figure}
+
+\begin{minipage}[t]{0.49\textwidth}
+    \includegraphics[width=\textwidth,keepaspectratio]{images/eps/Hematopoiesis_res76.eps}
+    \renewcommand{\thefigure}{4-2}
+    \captionsetup{justification=raggedright}
+    \captionof{figure}{次数制約付き最小全域木の結果。}
+\end{minipage}
+\hspace{0.05\textwidth}
+\begin{minipage}[t]{0.49\textwidth}
+    \includegraphics[width=\textwidth,keepaspectratio]{images/eps/Hematopoiesis76.eps}
+    \renewcommand{\thefigure}{4-3}
+    \captionsetup{justification=raggedright}
+    \captionof{figure}{次数制約無しの最小全域木の結果。 }
+\end{minipage}
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+状態 & データ数 & 制約付きの予測結果 & 制約付きの正答率 & 制約無しの予測結果 & 制約無しの正答率 \\
+\hline
+Meg & 1064 & 1064 & 1 & 0 & 0 \\
+Erythroid & 365 & 365 & 1 & 0 & 0 \\
+Mast & 1545 & 1545 & 1 & 1545 & 1 \\
+Baso & 5998 & 5989 & 0.9985 & 5989 & 0.9985 \\
+Eos & 168 & 0 & 0 & 0 & 0 \\
+Neutrophil & 9231 & 9208 & 0.9975 & 9208 & 0.9975 \\
+Monocyte & 9184 & 9069 & 0.9875 & 9069 & 0.3983 \\
+pDC & 49 & 0 & 0 & 0 & 0 \\
+Lymphoid & 64 & 0 & 0 & 0 & 0 \\
+Ccr7_DC & 203 & 0 & 0 & 0 & 0 \\
+合計 & 27871 & 27240 & 0.5983 & 25811 & 0.4979 \\
+\hline
+\end{tabular}}
+\captionsetup{justification=raggedright}
+\caption{MSTの結果を使用して、MSTの同じ葉に所属している細胞クラスタのデータとundiffを除いた正解データを比較した結果。Eosの分岐位置が不適切であるので正答率を0にしている。pDC,Lymphoid,Ccr7DCを３つの分岐に分かれるべきだが分岐を認識できなかったので正答率を0にしている。制約無しの正答率においてMeg,Erythroid,Mastの分岐が3つに分かれているので最もデータ数が多いMast以外のデータの正答率を0にしている。}
+\label{table:example}
+\end{table}
+
+\section{考察と展望}
+\subsection{クラスタ数の影響}
+    クラスタ数が分岐認識能力にどのような影響があるのか調査した。35,76,150 のクラスタ数を使用して制約付きMSTを構築した。\\クラスタ数が少ないすぎると小さい分岐を1つのクラスタが吸収し分岐を認識できない可能性が高くなる。クラスタ数が多すぎると小さい分岐を認識できるが、密度が薄いクラスタができやすく意図しない分岐を認識しやすくなる。\\
+
+\begin{minipage}[t]{0.3\textwidth}
+    \includegraphics[width=\textwidth,keepaspectratio]{images/eps/Hematopoiesis_res76.eps}
+    \renewcommand{\thefigure}{4-2(再掲)}
+    \captionsetup{justification=raggedright}
+    \captionof{figure}{クラスタ数が76の時の次数制約付き最小全域木の結果。}
+\end{minipage}
+\hspace{0.05\textwidth}
+\begin{minipage}[t]{0.3\textwidth}
+    \includegraphics[width=\textwidth,keepaspectratio]{images/eps/Hematopoiesis_res35.eps}
+    \renewcommand{\thefigure}{5-1}
+    \captionsetup{justification=raggedright}
+    \captionof{figure}{クラスタ数が35の時の次数制約付き最小全域木の結果。 }
+\end{minipage}
+\hspace{0.05\textwidth}
+\begin{minipage}[t]{0.3\textwidth}
+    \includegraphics[width=\textwidth,keepaspectratio]{images/eps/Hematopoiesis_res100.eps}
+    \renewcommand{\thefigure}{5-2}
+    \captionsetup{justification=raggedright}
+    \captionof{figure}{クラスタ数が100の時の次数制約付き最小全域木の結果。}
+\end{minipage}\\\\
+本研究では正しいクラスタ数を一意に決定すること主張はしておらず、本研究の改良はデータの輪郭からクラスタ数を決定する方法を提案している。輪郭からクラスタ数を決定するためデータを認識する際に認識する画素数を変更したり、画像を平滑化する際にシグマを変更することで、間接的にクラスタ数を変更することができる。
+
+\subsection{検証データの特性}
+    現在検証済みのデータセットはデータの分散が小さく正しい木構造を予測しやすいデータであった。\\次元削減後のデータの分散が大きすぎるデータでは細線化処理によって取得できる木構造うまく分岐を予測できない可能性がある。
+
+\subsection{今後の予定}
+\begin{enumerate}
+    \item 検証データを追加で２つ集める。\\
+        現在１つの検証データしか用意できていないので、追加で検証データを用意して検証する。
+    \item クラスタリングアルゴリズムの作成\\
+        現在は輪郭から取得した木構造からKmeansの初期重心を取得しているだけである。輪郭から取得した木構造ができるだけ崩れないようにクラスタリングできる手法を開発する。
+    \item 距離関数
+        現在はマハラビノビス距離を使用しているが、同時主曲線等のカーブを使用した距離行列を採用する。
+\end{enumerate}
+
+\section{参考文献}
+\begin{description}
+  \item[\textnormal{[1]}] Shou-Wen Wang. et al. CoSpar identifies early cell fate biases from single-cell transcriptomic and lineage information. Nature Biotechnology volume 40, pages1066–1074 (2022)
+  \item[\textnormal{[2]}] Kelly Street. et al. Slingshot: cell lineage and pseudotime inference for single-cell transcriptomics. BMC Genomics volume 19, Article number: 477 (2018)
+  \item[\textnormal{[3]}] Hematopoiesis dataset from Weinreb, C., Rodriguez-Fraticelli, A., Camargo, F. D. & Klein, A. M. Science 367, (2020).
+\end{description}
+\end{document}
