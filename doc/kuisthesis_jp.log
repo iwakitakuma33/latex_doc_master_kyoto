@@ -1,0 +1,3637 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.22)  29 JAN 2025 19:18
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex
+(/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex
+LaTeX2e <2024-11-01> patch level 1
+L3 programming layer <2024-12-25>
+(./kuisthesis.cls
+Document Class: kuisthesis 1996/04/01 ver 2.00
+(./kuisthesis.sty (/usr/local/texlive/2024/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/newpx/newpxtext.sty
+Package: newpxtext 2024/02/09 v1.536(Michael Sharpe) latex and unicode latex support for TeXGyrePagellaX
+ `newpxtext' v1.536, 2024/02/09 Text macros taking advantage of TeXGyre Pagella and its extensions (msharpe) (/usr/local/texlive/2024/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: dvipdfmx.def on input line 274.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+File: dvipdfmx.def 2022/09/22 v5.0m Graphics/color driver for dvipdfmx
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/xpatch/xpatch.sty (/usr/local/texlive/2024/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2024-12-25 L3 programming layer (loader) 
+
+
+/usr/local/texlive/2024/texmf-dist/tex/latex/l3kernel/expl3.sty:154: LaTeX Error: Backend request inconsistent with engine: using 'pdftex'
+(LaTeX)        backend.
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.154   { \sys_load_backend:n { } }
+                                   
+
+You have requested backend 'dvipdfmx', but this is not suitable for use with
+the active engine. LaTeX will use the 'pdftex' backend instead.
+
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count196
+\l__pdf_internal_box=\box52
+))
+Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2024-08-16 L3 Experimental document command parser
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count197
+)) (/usr/local/texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+ (/usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks17
+\XKV@tempa@toks=\toks18
+ (/usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/keyval.tex))
+\XKV@depth=\count198
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (/usr/local/texlive/2024/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
+) (/usr/local/texlive/2024/texmf-dist/tex/generic/xstring/xstring.sty (/usr/local/texlive/2024/texmf-dist/tex/generic/xstring/xstring.tex
+\xs_counta=\count199
+\xs_countb=\count266
+)
+Package: xstring 2023/08/22 v1.86 String manipulations (CT)
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/carlisle/scalefnt.sty)
+LaTeX Font Info:    Setting zplLF sub-encoding to TS1/0 on input line 26.
+LaTeX Font Info:    Setting zplTLF sub-encoding to TS1/0 on input line 26.
+LaTeX Font Info:    Setting zplOsF sub-encoding to TS1/0 on input line 26.
+LaTeX Font Info:    Setting zplTOsF sub-encoding to TS1/0 on input line 26.
+\zpl@cnt=\count267
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/fontaxes/fontaxes.sty
+Package: fontaxes 2020/07/21 v1.0e Font selection axes
+LaTeX Info: Redefining \upshape on input line 29.
+LaTeX Info: Redefining \itshape on input line 31.
+LaTeX Info: Redefining \slshape on input line 33.
+LaTeX Info: Redefining \swshape on input line 35.
+LaTeX Info: Redefining \scshape on input line 37.
+LaTeX Info: Redefining \sscshape on input line 39.
+LaTeX Info: Redefining \ulcshape on input line 41.
+LaTeX Info: Redefining \textsw on input line 47.
+LaTeX Info: Redefining \textssc on input line 48.
+LaTeX Info: Redefining \textulc on input line 49.
+)
+\zpl@sixem=\dimen141
+\zpl@y=\dimen142
+\zpl@x=\dimen143
+\zpl@tmpdima=\dimen144
+\zpl@tmpdimb=\dimen145
+\zpl@tmpdimc=\dimen146
+\zpl@tmpdimd=\dimen147
+\zpl@tmpdime=\dimen148
+\zpl@tmpdimf=\dimen149
+\zpl@dimA=\dimen150
+\zpl@dimAA=\dimen151
+\zpl@dimB=\dimen152
+\zpl@dimBB=\dimen153
+\zpl@dimC=\dimen154
+LaTeX Info: Redefining \oldstylenums on input line 789.
+LaTeX Font Info:    Trying to load font information for T1+zplLF on input line 798.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/newpx/t1zpllf.fd
+File: t1zplllf.fd 2021/05/25 v1.0 font definition file for T1/zpl/lf
+)
+LaTeX Font Info:    Trying to load font information for T1+zplTLF on input line 799.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/newpx/t1zpltlf.fd
+File: t1zpltlf.fd 2021/05/25 v1.0 font definition file for T1/zpl/tlf
+)
+LaTeX Font Info:    Trying to load font information for T1+zplOsF on input line 800.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/newpx/t1zplosf.fd
+File: t1zplosf.fd 2021/05/25 v1.0 font definition file for T1/zpl/osf
+)
+LaTeX Font Info:    Trying to load font information for T1+zplTOsF on input line 801.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/newpx/t1zpltosf.fd
+File: t1zpltosf.fd 2021/05/25 v1.0 font definition file for T1/zpl/tosf
+)) (/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2024/11/05 v2.17t AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen155
+)) (/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen156
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count268
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count269
+\leftroot@=\count270
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count271
+\DOTSCASE@=\count272
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box53
+\strutbox@=\box54
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen157
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count273
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count274
+\dotsspace@=\muskip17
+\c@parentequation=\count275
+\dspbrk@lvl=\count276
+\tag@help=\toks20
+\row@=\count277
+\column@=\count278
+\maxfields@=\count279
+\andhelp@=\toks21
+\eqnshift@=\dimen158
+\alignsep@=\dimen159
+\tagshift@=\dimen160
+\tagwidth@=\dimen161
+\totwidth@=\dimen162
+\lineht@=\dimen163
+\@envbody=\toks22
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsxtra.sty
+Package: amsxtra 1999/11/15 v1.2c AMS extra commands
+LaTeX Info: Redefining \nobreakspace on input line 54.
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2023/12/19 v1.2f Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+Package bm Info: No bold for \OMX/cmex/m/n, using \pmb.
+Package bm Info: No bold for \U/msa/m/n, using \pmb.
+Package bm Info: No bold for \U/msb/m/n, using \pmb.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\old@latex@skip=\skip52
+
+
+Class kuisthesis Warning: pt size option is ignored. 12pt is used on input line 79.
+
+\jfsize=\count280
+\jspaceskip=\dimen164
+./kuisthesis.sty:208: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   z
+l.208 \@normalsize
+                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+./kuisthesis.sty:208: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.208 \@normalsize
+                  
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (33.70497pt too wide) in paragraph at lines 208--209
+[]\T1/cmr/m/n/12 zw 
+ []
+
+\@Kwidth=\dimen165
+LaTeX Font Info:    Trying to load font information for U+msa on input line 223.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 223.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+./kuisthesis.sty:233: Undefined control sequence.
+l.233 \ifASCII\if@LaTeX@e\@@topmargin
+                                     \topmargin\fi\fi			% 2.00(7)
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./kuisthesis.sty:234: Missing number, treated as zero.
+<to be read again> 
+                   \scan_stop: 
+l.234 
+      
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./kuisthesis.sty:234: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \scan_stop: 
+l.234 
+      
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+\c@entranceyear=\count281
+LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
+(Font)              scaled to size 12.0pt on input line 385.
+LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
+(Font)              scaled to size 12.0pt on input line 385.
+\c@section=\count282
+\c@subsection=\count283
+\c@subsubsection=\count284
+\c@paragraph=\count285
+\c@subparagraph=\count286
+\app@page=\count287
+\c@figure=\count288
+\c@table=\count289
+\PF@fnotectr=\count290
+\PF@page=\count291
+)) (/usr/local/texlive/2024/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: dvipdfmx.def on input line 106.
+)
+\Gin@req@height=\dimen166
+\Gin@req@width=\dimen167
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2024/10/22 version 6.4.1 text color boxes
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks24
+\pgfutil@tempdima=\dimen168
+\pgfutil@tempdimb=\dimen169
+) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box55
+) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks25
+\pgfkeys@temptoks=\toks26
+ (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks27
+))
+\pgf@x=\dimen170
+\pgf@y=\dimen171
+\pgf@xa=\dimen172
+\pgf@ya=\dimen173
+\pgf@xb=\dimen174
+\pgf@yb=\dimen175
+\pgf@xc=\dimen176
+\pgf@yc=\dimen177
+\pgf@xd=\dimen178
+\pgf@yd=\dimen179
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count292
+\c@pgf@countb=\count293
+\c@pgf@countc=\count294
+\c@pgf@countd=\count295
+\t@pgf@toka=\toks28
+\t@pgf@tokb=\toks29
+\t@pgf@tokc=\toks30
+\pgf@sys@id@count=\count296
+ (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-dvipdfmx.def
+ (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
+File: pgfsys-dvipdfmx.def 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+)
+\pgfsys@objnum=\count297
+)) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count298
+\pgfsyssoftpath@bigbuffer@items=\count299
+) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+
+LaTeX Warning: Package "xcolor" has already been loaded: ignoring load-time
+(LaTeX)        option "dvipdfmx".
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen180
+\pgfmath@count=\count300
+\pgfmath@box=\box56
+\pgfmath@toks=\toks31
+\pgfmath@stack@operand=\toks32
+\pgfmath@stack@operation=\toks33
+) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count301
+)) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen181
+\pgf@picmaxx=\dimen182
+\pgf@picminy=\dimen183
+\pgf@picmaxy=\dimen184
+\pgf@pathminx=\dimen185
+\pgf@pathmaxx=\dimen186
+\pgf@pathminy=\dimen187
+\pgf@pathmaxy=\dimen188
+\pgf@xx=\dimen189
+\pgf@xy=\dimen190
+\pgf@yx=\dimen191
+\pgf@yy=\dimen192
+\pgf@zx=\dimen193
+\pgf@zy=\dimen194
+) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen195
+\pgf@path@lasty=\dimen196
+) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen197
+\pgf@shorten@start@additional=\dimen198
+) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box57
+\pgf@hbox=\box58
+\pgf@layerbox@main=\box59
+\pgf@picture@serial@count=\count302
+) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen199
+) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen256
+\pgf@pt@y=\dimen257
+\pgf@pt@temp=\dimen258
+) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen259
+) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen260
+\pgf@sys@shading@range@num=\count303
+\pgf@shadingcount=\count304
+) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box60
+) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box61
+) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen261
+\pgf@nodesepend=\dimen262
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+)) (/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen263
+\pgffor@skip=\dimen264
+\pgffor@stack=\toks34
+\pgffor@toks=\toks35
+)) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count305
+\pgfplotmarksize=\dimen265
+)
+\tikz@lastx=\dimen266
+\tikz@lasty=\dimen267
+\tikz@lastxsaved=\dimen268
+\tikz@lastysaved=\dimen269
+\tikz@lastmovetox=\dimen270
+\tikz@lastmovetoy=\dimen271
+\tikzleveldistance=\dimen272
+\tikzsiblingdistance=\dimen273
+\tikz@figbox=\box62
+\tikz@figbox@bg=\box63
+\tikz@tempbox=\box64
+\tikz@tempbox@bg=\box65
+\tikztreelevel=\count306
+\tikznumberofchildren=\count307
+\tikznumberofcurrentchild=\count308
+\tikz@fig@count=\count309
+ (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count310
+\pgfmatrixcurrentcolumn=\count311
+\pgf@matrix@numberofcolumns=\count312
+)
+\tikz@expandcount=\count313
+ (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (/usr/local/texlive/2024/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks36
+\verbatim@line=\toks37
+\verbatim@in@stream=\read3
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\tcb@titlebox=\box66
+\tcb@upperbox=\box67
+\tcb@lowerbox=\box68
+\tcb@phantombox=\box69
+\c@tcbbreakpart=\count314
+\c@tcblayer=\count315
+\c@tcolorbox@number=\count316
+\l__tcobox_tmpa_box=\box70
+\l__tcobox_tmpa_dim=\dimen274
+\tcb@temp=\box71
+\tcb@temp=\box72
+\tcb@temp=\box73
+\tcb@temp=\box74
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen275
+\captionmargin=\dimen276
+\caption@leftmargin=\dimen277
+\caption@rightmargin=\dimen278
+\caption@width=\dimen279
+\caption@indent=\dimen280
+\caption@parindent=\dimen281
+\caption@hangindent=\dimen282
+\abovecaptionskip=\skip53
+\belowcaptionskip=\skip54
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+Package caption Info: \@makecaption = \long macro:#1#2->\par \cap@beforeskip \setbox \@tempboxa \hbox {#1: #2} \ifdim \wd \@tempboxa >\hsize #1: #2\par \else \centerline {\box \@tempboxa }\fi \cap@afterskip  on input line 1175.
+)
+
+Package caption Warning: Unknown document class (or package),
+(caption)                standard defaults will be used.
+See the caption package documentation for explanation.
+
+\c@caption@flags=\count317
+\c@continuedfloat=\count318
+)
+No file kuisthesis_jp.aux.
+\openout1 = `kuisthesis_jp.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:19: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   z
+l.19 \begin{document}
+                     
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:19: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 \begin{document}
+                     
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\c@mv@tabular=\count319
+\c@mv@boldtabular=\count320
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   z
+l.20 \maketitle
+               					% 「とびら」の出力
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+[1{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+]
+LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
+(Font)              scaled to size 14.4pt on input line 20.
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   z
+l.20 \maketitle
+               					% 「とびら」の出力
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
+(Font)              scaled to size 17.28pt on input line 20.
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   z
+l.20 \maketitle
+               					% 「とびら」の出力
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
+(Font)              scaled to size 17.28pt on input line 20.
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 修 (U+4FEE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 士 (U+58EB)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 論 (U+8AD6)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 文 (U+6587)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+Overfull \hbox (7.26108pt too wide) in paragraph at lines 20--20
+ \T1/zpltlf/m/n/14.4 zw\T1/zpltlf/m/n/17.28 zw 
+ []
+
+LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
+(Font)              scaled to size 20.74pt on input line 20.
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   z
+l.20 \maketitle
+               					% 「とびら」の出力
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
+(Font)              scaled to size 20.74pt on input line 20.
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 画 (U+753B)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 像 (U+50CF)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 処 (U+51E6)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 理 (U+7406)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character と (U+3068)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 次 (U+6B21)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 数 (U+6570)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 制 (U+5236)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 約 (U+7D04)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 付 (U+4ED8)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character き (U+304D)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 最 (U+6700)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 小 (U+5C0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 全 (U+5168)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 域 (U+57DF)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 木 (U+6728)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character に (U+306B)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 基 (U+57FA)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character づ (U+3065)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character く (U+304F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 細 (U+7D30)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 胞 (U+80DE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 系 (U+7CFB)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 統 (U+7D71)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 擬 (U+64EC)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 似 (U+4F3C)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 時 (U+6642)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 間 (U+9593)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character の (U+306E)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 予 (U+4E88)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 測 (U+6E2C)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 手 (U+624B)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 法 (U+6CD5)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character の (U+306E)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 改 (U+6539)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 良 (U+826F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 指 (U+6307)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 導 (U+5C0E)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 教 (U+6559)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 員 (U+54E1)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character ： (U+FF1A)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 阿 (U+963F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 久 (U+4E45)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 津 (U+6D25)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 　 (U+3000)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 達 (U+9054)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 也 (U+4E5F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 教 (U+6559)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 授 (U+6388)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 京 (U+4EAC)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 都 (U+90FD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 大 (U+5927)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 学 (U+5B66)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 大 (U+5927)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 学 (U+5B66)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 院 (U+9662)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 情 (U+60C5)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 報 (U+5831)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 学 (U+5B66)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 研 (U+7814)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 究 (U+7A76)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 科 (U+79D1)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   z
+l.20 \maketitle
+               					% 「とびら」の出力
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 岩 (U+5CA9)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 城 (U+57CE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 　 (U+3000)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 拓 (U+62D3)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 磨 (U+78E8)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 年 (U+5E74)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 月 (U+6708)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: LaTeX Error: Unicode character 日 (U+65E5)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \maketitle
+               					% 「とびら」の出力
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+Overfull \hbox (8.19998pt too wide) in paragraph at lines 20--20
+ []\T1/zpltlf/m/n/14.4 202526 
+ []
+
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:20: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   z
+l.20 \maketitle
+               					% 「とびら」の出力
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+[1000
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+]
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:21: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   z
+l.21 \begin{spacing}{1.2}
+                          % 1.5倍の行間
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   z
+l.23 \begin{jabstract}
+                      				% 和文梗概
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+[1001
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+Non-PDF special ignored!
+<special> color push gray 0
+Non-PDF special ignored!
+<special> color pop
+]
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   z
+l.23 \begin{jabstract}
+                      				% 和文梗概
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
+(Font)              scaled to size 14.4pt on input line 23.
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character 画 (U+753B)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character 像 (U+50CF)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character 処 (U+51E6)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character 理 (U+7406)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character と (U+3068)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character 次 (U+6B21)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character 数 (U+6570)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character 制 (U+5236)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character 約 (U+7D04)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character 付 (U+4ED8)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character き (U+304D)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character 最 (U+6700)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character 小 (U+5C0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character 全 (U+5168)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character 域 (U+57DF)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character 木 (U+6728)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character に (U+306B)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character 基 (U+57FA)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character づ (U+3065)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character く (U+304F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character 細 (U+7D30)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character 胞 (U+80DE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character 系 (U+7CFB)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character 統 (U+7D71)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character 擬 (U+64EC)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character 似 (U+4F3C)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character 時 (U+6642)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character 間 (U+9593)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character の (U+306E)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character 予 (U+4E88)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character 測 (U+6E2C)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character 手 (U+624B)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character 法 (U+6CD5)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character の (U+306E)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character 改 (U+6539)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character 良 (U+826F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character 岩 (U+5CA9)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character 城 (U+57CE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character 　 (U+3000)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character 拓 (U+62D3)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character 磨 (U+78E8)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character 内 (U+5185)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character 容 (U+5BB9)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character 梗 (U+6897)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:23: LaTeX Error: Unicode character 概 (U+6982)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{jabstract}
+                      				% 和文梗概
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:24: LaTeX Error: Unicode character は (U+306F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24   single-cell RNA-seq は
+                              、細胞のスナップショットを取得�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:24: LaTeX Error: Unicode character 、 (U+3001)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24   single-cell RNA-seq は、
+                                 細胞のスナップショットを取得�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:24: LaTeX Error: Unicode character 細 (U+7D30)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24   single-cell RNA-seq は、細
+                                    胞のスナップショットを取得�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:24: LaTeX Error: Unicode character 胞 (U+80DE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24   single-cell RNA-seq は、細胞
+                                       のスナップショットを取得�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:24: LaTeX Error: Unicode character の (U+306E)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24   single-cell RNA-seq は、細胞の
+                                          スナップショットを取得�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:24: LaTeX Error: Unicode character ス (U+30B9)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24   single-cell RNA-seq は、細胞のス
+                                             ナップショットを取得�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:24: LaTeX Error: Unicode character ナ (U+30CA)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24   single-cell RNA-seq は、細胞のスナ
+                                                ップショットを取得�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:24: LaTeX Error: Unicode character ッ (U+30C3)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 ...ngle-cell RNA-seq は、細胞のスナッ
+                                                  プショットを取得�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:24: LaTeX Error: Unicode character プ (U+30D7)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 ...e-cell RNA-seq は、細胞のスナップ
+                                                  ショットを取得す�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:24: LaTeX Error: Unicode character シ (U+30B7)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 ...ell RNA-seq は、細胞のスナップシ
+                                                  ョットを取得する�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:24: LaTeX Error: Unicode character ョ (U+30E7)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 ... RNA-seq は、細胞のスナップショ
+                                                  ットを取得する技�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:24: LaTeX Error: Unicode character ッ (U+30C3)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 ...A-seq は、細胞のスナップショッ
+                                                  トを取得する技術�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:24: LaTeX Error: Unicode character ト (U+30C8)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 ...eq は、細胞のスナップショット
+                                                  を取得する技術で�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:24: LaTeX Error: Unicode character を (U+3092)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 ...は、細胞のスナップショットを
+                                                  取得する技術であ�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:24: LaTeX Error: Unicode character 取 (U+53D6)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 ...、細胞のスナップショットを取
+                                                  得する技術であり、
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:24: LaTeX Error: Unicode character 得 (U+5F97)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 ...細胞のスナップショットを取得
+                                                  する技術であり、
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:24: LaTeX Error: Unicode character す (U+3059)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 ...胞のスナップショットを取得す
+                                                  る技術であり、
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:24: LaTeX Error: Unicode character る (U+308B)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 ...のスナップショットを取得する
+                                                  技術であり、
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:24: LaTeX Error: Unicode character 技 (U+6280)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 ...スナップショットを取得する技
+                                                  術であり、
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:24: LaTeX Error: Unicode character 術 (U+8853)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 ...ナップショットを取得する技術
+                                                  であり、
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:24: LaTeX Error: Unicode character で (U+3067)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 ...ップショットを取得する技術で
+                                                  あり、
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:24: LaTeX Error: Unicode character あ (U+3042)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 ...プショットを取得する技術であ
+                                                  り、
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:24: LaTeX Error: Unicode character り (U+308A)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 ...ショットを取得する技術であり
+                                                  、
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:24: LaTeX Error: Unicode character 、 (U+3001)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 ...ョットを取得する技術であり、
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:25: LaTeX Error: Unicode character デ (U+30C7)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25   デ
+          ータ解析を通じて生物学的プロセスにおける変化...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:25: LaTeX Error: Unicode character ー (U+30FC)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25   デー
+             タ解析を通じて生物学的プロセスにおける変化...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:25: LaTeX Error: Unicode character タ (U+30BF)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25   データ
+                解析を通じて生物学的プロセスにおける変化...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:25: LaTeX Error: Unicode character 解 (U+89E3)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25   データ解
+                   析を通じて生物学的プロセスにおける変化...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:25: LaTeX Error: Unicode character 析 (U+6790)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25   データ解析
+                      を通じて生物学的プロセスにおける変化...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:25: LaTeX Error: Unicode character を (U+3092)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25   データ解析を
+                         通じて生物学的プロセスにおける変化...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:25: LaTeX Error: Unicode character 通 (U+901A)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25   データ解析を通
+                            じて生物学的プロセスにおける変化...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:25: LaTeX Error: Unicode character じ (U+3058)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25   データ解析を通じ
+                               て生物学的プロセスにおける変化...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:25: LaTeX Error: Unicode character て (U+3066)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25   データ解析を通じて
+                                  生物学的プロセスにおける変化...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:25: LaTeX Error: Unicode character 生 (U+751F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25   データ解析を通じて生
+                                     物学的プロセスにおける変化...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:25: LaTeX Error: Unicode character 物 (U+7269)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25   データ解析を通じて生物
+                                        学的プロセスにおける変化...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:25: LaTeX Error: Unicode character 学 (U+5B66)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25   データ解析を通じて生物学
+                                           的プロセスにおける変化...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:25: LaTeX Error: Unicode character 的 (U+7684)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25   データ解析を通じて生物学的
+                                              プロセスにおける変化...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:25: LaTeX Error: Unicode character プ (U+30D7)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25   データ解析を通じて生物学的プ
+                                                 ロセスにおける変化...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:25: LaTeX Error: Unicode character ロ (U+30ED)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...ータ解析を通じて生物学的プロ
+                                                  セスにおける変化�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:25: LaTeX Error: Unicode character セ (U+30BB)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...タ解析を通じて生物学的プロセ
+                                                  スにおける変化の�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:25: LaTeX Error: Unicode character ス (U+30B9)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...解析を通じて生物学的プロセス
+                                                  における変化の連�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:25: LaTeX Error: Unicode character に (U+306B)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...析を通じて生物学的プロセスに
+                                                  おける変化の連続�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:25: LaTeX Error: Unicode character お (U+304A)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...を通じて生物学的プロセスにお
+                                                  ける変化の連続性�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:25: LaTeX Error: Unicode character け (U+3051)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...通じて生物学的プロセスにおけ
+                                                  る変化の連続性を�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:25: LaTeX Error: Unicode character る (U+308B)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...じて生物学的プロセスにおける
+                                                  変化の連続性を再�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:25: LaTeX Error: Unicode character 変 (U+5909)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...て生物学的プロセスにおける変
+                                                  化の連続性を再構�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:25: LaTeX Error: Unicode character 化 (U+5316)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...生物学的プロセスにおける変化
+                                                  の連続性を再構築�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:25: LaTeX Error: Unicode character の (U+306E)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...物学的プロセスにおける変化の
+                                                  連続性を再構築す�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:25: LaTeX Error: Unicode character 連 (U+9023)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...学的プロセスにおける変化の連
+                                                  続性を再構築する�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:25: LaTeX Error: Unicode character 続 (U+7D9A)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...的プロセスにおける変化の連続
+                                                  性を再構築するこ�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:25: LaTeX Error: Unicode character 性 (U+6027)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...プロセスにおける変化の連続性
+                                                  を再構築すること�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:25: LaTeX Error: Unicode character を (U+3092)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...ロセスにおける変化の連続性を
+                                                  再構築することが�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:25: LaTeX Error: Unicode character 再 (U+518D)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...セスにおける変化の連続性を再
+                                                  構築することが可�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:25: LaTeX Error: Unicode character 構 (U+69CB)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...スにおける変化の連続性を再構
+                                                  築することが可能�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:25: LaTeX Error: Unicode character 築 (U+7BC9)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...における変化の連続性を再構築
+                                                  することが可能で�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:25: LaTeX Error: Unicode character す (U+3059)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...おける変化の連続性を再構築す
+                                                  ることが可能であ�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:25: LaTeX Error: Unicode character る (U+308B)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...ける変化の連続性を再構築する
+                                                  ことが可能である。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:25: LaTeX Error: Unicode character こ (U+3053)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...る変化の連続性を再構築するこ
+                                                  とが可能である。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:25: LaTeX Error: Unicode character と (U+3068)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...変化の連続性を再構築すること
+                                                  が可能である。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:25: LaTeX Error: Unicode character が (U+304C)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...化の連続性を再構築することが
+                                                  可能である。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:25: LaTeX Error: Unicode character 可 (U+53EF)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...の連続性を再構築することが可
+                                                  能である。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:25: LaTeX Error: Unicode character 能 (U+80FD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...連続性を再構築することが可能
+                                                  である。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:25: LaTeX Error: Unicode character で (U+3067)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...続性を再構築することが可能で
+                                                  ある。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:25: LaTeX Error: Unicode character あ (U+3042)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...性を再構築することが可能であ
+                                                  る。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:25: LaTeX Error: Unicode character る (U+308B)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...を再構築することが可能である
+                                                  。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:25: LaTeX Error: Unicode character 。 (U+3002)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...再構築することが可能である。
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:26: LaTeX Error: Unicode character 細 (U+7D30)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26   細
+          胞系統擬似時間解析のためのツールとして Slingsho...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:26: LaTeX Error: Unicode character 胞 (U+80DE)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26   細胞
+             系統擬似時間解析のためのツールとして Slingsho...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:26: LaTeX Error: Unicode character 系 (U+7CFB)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26   細胞系
+                統擬似時間解析のためのツールとして Slingsho...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:26: LaTeX Error: Unicode character 統 (U+7D71)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26   細胞系統
+                   擬似時間解析のためのツールとして Slingsho...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:26: LaTeX Error: Unicode character 擬 (U+64EC)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26   細胞系統擬
+                      似時間解析のためのツールとして Slingsho...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:26: LaTeX Error: Unicode character 似 (U+4F3C)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26   細胞系統擬似
+                         時間解析のためのツールとして Slingsho...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:26: LaTeX Error: Unicode character 時 (U+6642)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26   細胞系統擬似時
+                            間解析のためのツールとして Slingsho...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:26: LaTeX Error: Unicode character 間 (U+9593)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26   細胞系統擬似時間
+                               解析のためのツールとして Slingsho...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:26: LaTeX Error: Unicode character 解 (U+89E3)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26   細胞系統擬似時間解
+                                  析のためのツールとして Slingsho...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:26: LaTeX Error: Unicode character 析 (U+6790)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26   細胞系統擬似時間解析
+                                     のためのツールとして Slingsho...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:26: LaTeX Error: Unicode character の (U+306E)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26   細胞系統擬似時間解析の
+                                        ためのツールとして Slingsho...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:26: LaTeX Error: Unicode character た (U+305F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26   細胞系統擬似時間解析のた
+                                           めのツールとして Slingsho...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:26: LaTeX Error: Unicode character め (U+3081)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26   細胞系統擬似時間解析のため
+                                              のツールとして Slingsho...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:26: LaTeX Error: Unicode character の (U+306E)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26   細胞系統擬似時間解析のための
+                                                 ツールとして Slingsho...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:26: LaTeX Error: Unicode character ツ (U+30C4)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 ...胞系統擬似時間解析のためのツ
+                                                  ールとして Slingshot ...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:26: LaTeX Error: Unicode character ー (U+30FC)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 ...系統擬似時間解析のためのツー
+                                                  ルとして Slingshot や...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:26: LaTeX Error: Unicode character ル (U+30EB)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 ...統擬似時間解析のためのツール
+                                                  として Slingshot や Mo...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:26: LaTeX Error: Unicode character と (U+3068)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 ...擬似時間解析のためのツールと
+                                                  して Slingshot や Monoc...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:26: LaTeX Error: Unicode character し (U+3057)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 ...似時間解析のためのツールとし
+                                                  て Slingshot や Monocle ...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:26: LaTeX Error: Unicode character て (U+3066)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 ...時間解析のためのツールとして
+                                                   Slingshot や Monocle が...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:26: LaTeX Error: Unicode character や (U+3084)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 ...�ためのツールとして Slingshot や
+                                                   Monocle が広く利用�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:26: LaTeX Error: Unicode character が (U+304C)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 ...�ールとして Slingshot や Monocle が
+                                                  広く利用されてお�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:26: LaTeX Error: Unicode character 広 (U+5E83)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 ...�ルとして Slingshot や Monocle が広
+                                                  く利用されており、
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:26: LaTeX Error: Unicode character く (U+304F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 ...�として Slingshot や Monocle が広く
+                                                  利用されており、
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:26: LaTeX Error: Unicode character 利 (U+5229)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 ...�して Slingshot や Monocle が広く利
+                                                  用されており、
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:26: LaTeX Error: Unicode character 用 (U+7528)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 ...�て Slingshot や Monocle が広く利用
+                                                  されており、
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:26: LaTeX Error: Unicode character さ (U+3055)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 ...� Slingshot や Monocle が広く利用さ
+                                                  れており、
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:26: LaTeX Error: Unicode character れ (U+308C)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 ...lingshot や Monocle が広く利用され
+                                                  ており、
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:26: LaTeX Error: Unicode character て (U+3066)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 ...gshot や Monocle が広く利用されて
+                                                  おり、
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:26: LaTeX Error: Unicode character お (U+304A)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 ...ot や Monocle が広く利用されてお
+                                                  り、
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:26: LaTeX Error: Unicode character り (U+308A)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 ...や Monocle が広く利用されており
+                                                  、
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:26: LaTeX Error: Unicode character 、 (U+3001)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 ... Monocle が広く利用されており、
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:27: LaTeX Error: Unicode character こ (U+3053)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27   こ
+          れらは最小全域木を用いて生物学的プロセスの軌...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:27: LaTeX Error: Unicode character れ (U+308C)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27   これ
+             らは最小全域木を用いて生物学的プロセスの軌...
+(That makes 100 errors; please try again.) 
+Here is how much of TeX's memory you used:
+ 18777 strings out of 473207
+ 379903 string characters out of 5716282
+ 732721 words of memory out of 5000000
+ 41709 multiletter control sequences out of 15000+600000
+ 591186 words of font info for 73 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 100i,5n,135p,527b,200s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex:27:  ==> Fatal error occurred, no output PDF file produced!
