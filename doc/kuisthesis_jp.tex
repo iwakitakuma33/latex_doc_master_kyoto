@@ -8,7 +8,7 @@
 \captionsetup{labelformat=empty}
 \jtitle[画像処理と次数制約付き最小全域木に基づく細胞系統擬似時間の予測手法の改良]%	% 和文題目（内容梗概／目次用）
 	{画像処理と次数制約付き最小全域木に基づく細胞系統擬似時間の予測手法の改良}	% 和文題目
-\etitle{Improved method for predicting cell lineage pseudo-time based on image processing and constrained minimum spanning treee
+\etitle{Improved method for predicting cell lineage pseudo-time based on image processing and constrained minimum spanning tree
 }	% 英文題目
 \jauthor{岩城　拓磨}				% 和文著者名
 \eauthor{Iwaki Takuma}			% 英文著者名
@@ -21,7 +21,7 @@
 \begin{spacing}{1.2} % 1.5倍の行間
 
 \begin{jabstract}				% 和文梗概
-  single-cell RNA-seq は、細胞のスナップショットを取得する技術であり、
+  シングルセルRNAシーケンスは、細胞のスナップショットを取得する技術であり、
   データ解析を通じて生物学的プロセスにおける変化の連続性を再構築することが可能である。
   細胞系統擬似時間解析のためのツールとして Slingshot や Monocle が広く利用されており、
   これらは最小全域木を用いて生物学的プロセスの軌道を予測している。
@@ -30,10 +30,10 @@
   またSlingshotでは入力データをクラスタリングする必要があるが、適切なクラスタ方法やパラメータの決定方法などは不明である。
   画像処理によってクラスタ時に使用するパラメータを自動決定することでこの課題を解決した。
   具体的には次の方法で解析を行う。
-  2次元に次元削減後の single-cell RNA-seq データをヒストグラムを用いて画像として認識する。
+  2次元に次元削減後の シングルセルRNAシーケンスデータをヒストグラムを用いて画像として認識する。
   その画像に対して細線化処理をすることで大まかな木構造を計算する。
-  その木構造の分岐と葉の数を調べることでsingle-cell RNA-seq データのクラスタ数を決定する。
-  single-cell RNA-seq データをクラスタリングしその重心と決定したクラスタ数を用いて次数制限付き最小全域木を構築することで、
+  その木構造の分岐と葉の数を調べることでシングルセルRNAシーケンスデータのクラスタ数を決定する。
+  シングルセルRNAシーケンスデータをクラスタリングしその重心と決定したクラスタ数を用いて次数制限付き最小全域木を構築することで、
   「細胞の状態が一度に3つ以上には遷移しない」という生物学的前提を考慮した細胞状態の遷移構造とする。
   得られた最小全域木をprincipal curveで曲線にフィッティングすることで細胞系統擬似時間の軌道とする。
   この改良の有効性は、Bone marrow mononuclear cell、Hematopoiesis、Human fetal immune cell、および C. elegans の公開データセットを用いて実証した。
@@ -43,17 +43,17 @@
 \end{jabstract}
 
 \begin{eabstract}				% 英文梗概
-  Single-cell RNA sequencing (scRNA-seq) provides snapshots of individual cells, enabling the reconstruction of sequential changes in biological processes through data analysis. 
+  Single Cell RNA sequencing (scRNA-seq) provides snapshots of individual cells, enabling the reconstruction of sequential changes in biological processes through data analysis. 
   Various tools exist for pseudo-time analysis of cell lineage in biological processes, including Slingshot and Monocle, which utilize minimum spanning trees to predict trajectories. 
   However, these tools do not account for the biological assumption that cellular states transition no more than three ways simultaneously.
   In this study, we present an improved version of Slingshot that addresses this limitation. 
   Slingshot also requires clustering of input data, but the appropriate clustering method and parameter determination methods are not yet known.
 We solved this problem by using image processing to automatically determine the parameters to be used for clustering.
 Specifically, the following methods are used to analyze the data.
-  Single-cell RNA-seq data reduced to two dimensions are recognized as images using histograms.
+  Single Cell RNA-seq data reduced to two dimensions are recognized as images using histograms.
   The rough tree structure is computed by performing a skeletonization process on the image.
-  The number of clusters in the single-cell RNA-seq data is determined by examining the number of branches and leaves in the tree structure.
-  By clustering the single-cell RNA-seq data and constructing a degree-limited minimum spanning tree using the center of gravity and the determined number of clusters
+  The number of clusters in the Single Cell RNA-seq data is determined by examining the number of branches and leaves in the tree structure.
+  By clustering the Single Cell RNA-seq data and constructing a degree-limited minimum spanning tree using the center of gravity and the determined number of clusters
   , the transition structure of the cellular state is constructed considering the biological assumption that cellular states transition no more than three ways simultaneously.
   The resulting minimum spanning tree is fitted to a curve with a principal curve to obtain a cellular phylogenetic pseudo-time trajectory.
   The effectiveness of this improvement was validated using publicly available datasets, including those from Bone marrow mononuclear cells, Hematopoiesis, Human fetal immune cell, and C. elegans.
@@ -63,44 +63,53 @@ Specifically, the following methods are used to analyze the data.
 \tableofcontents				% 目次の出力
 
 \section{はじめに}\label{sec-intro}		% 導入
-本研究の前提知識として、single-cell RNA-seq、擬似時間解析、そしてそれに使用されるソフトウェアについて説明する。
+本研究の前提知識として、シングルセルRNAシーケンス、擬似時間解析、そしてそれに使用されるソフトウェアについて説明する。
 
-\subsection{single-cell RNA-seq}\label{sec-intro-1}
+\subsection{シングルセルRNAシーケンス}\label{sec-intro-1}
 生物の細胞は多種多様な種類から構成されており、1つの細胞が分裂を繰り返すことで多様性を持った細胞群へと分化していく。
 このような細胞の多様性を生み出す運命決定の仕組みについては、いまだ多くの謎が残されている。
 細胞の分化や発生のメカニズムを解明するには、各過程で個々の細胞がどのような振る舞いをしているかを正確に把握することが不可欠である。
 これまで、マイクロアレイ解析やRNAシーケンスを用いた網羅的な遺伝子発現解析が主に利用されてきた。しかし、これらの手法では数千以上の細胞から抽出したRNAを解析するため、
 複数の細胞群全体の平均的な転写状態を示す結果しか得られなかった。
-この課題に対して、近年大きく進展を遂げた single-cell RNA sequencing (scRNA-seq) は、個々の細胞レベルで遺伝子発現プロファイルを取得できる画期的な技術である。
+この課題に対して、近年大きく進展を遂げた Single Cell RNA sequencing (scRNA-seq) は、個々の細胞レベルで遺伝子発現プロファイルを取得できる画期的な技術である。
 scRNA-seqを用いることで、個々の細胞における遺伝子発現データを大量に取得・解析することが可能となり、細胞の分化プロセスを従来よりも詳細に追跡することが可能になった。
 この技術により、細胞運命の決定過程や分化の仕組みに関する新しい知見を得ることができるようになっている。
 例えば、胎生初期における組織の細分化から臓器が形成されるプロセスをscRNA-seqを用いて解析することで、iPS細胞から尿管芽を作製する方法が確立された [1]。
 scRNA-seqでは細胞内のRNAを断片化した後、逆転写を利用してcDNAを作製し、それをシーケンサーで読み取ることによって、1つの細胞内で発現している遺伝子の量を計測する。
-scRNA-seqでは一般的に次の画像のように使用する。細胞をどんどん細胞分裂させていく過程で細胞をサンプリングする。
+scRNA-seqでは一般的に図1のように使用する。細胞をどんどん細胞分裂させていく過程で細胞をサンプリングする。
 それらを1つ1つシーケンサと呼ばれる機械にかけ細胞内のRNAなどを読み取ることで1つの細胞の遺伝子発現データを得ることができる。
 シーケンサは細胞の中のRNAを全て取り出して断片化等の処理を行うため読み取りに使用された細胞はそれ以降の実験において細胞分裂させることはできない。
 得ることができるのは細胞のその時点でのスナップショットだけであり、
 1つの細胞だけを用いて分化の全ての過程における遺伝子発現量をシーケンサで計測することは現時点ではできない。
-よって多くの細胞のスナップショットデータを作成し解析することで細胞の分化を分析する必要がある。\\
-\\
-\vspace{1zh}
-\includegraphics[width=\textwidth]{./img/Slide22.png}
-\vspace{1zh}
+よって多くの細胞のスナップショットデータを作成し解析することで細胞の分化を分析する必要がある。
+\begin{tcolorbox}[colframe=black!70, colback=white, boxrule=0.2mm, width=\textwidth, arc=2mm]
+  \begin{center}
+    \includegraphics[width=\textwidth]{./img/Slide22.png}
+  \end{center}
+  \scriptsize % ここでフォントサイズを小さくします
+  \textbf{図1:} シーケンサーを用いた実験の流れの概要
+\end{tcolorbox}
 \subsection{擬似時間解析}\label{sec-intro-2}
 各細胞の内部状態の変化は時間的に同期されているわけではなく、各細胞ごとの時間軸で細胞は変化していく。
 しかし研究者が欲しい情報は初期の細胞がどのような分化過程を辿るのかであるので、細胞全体として細胞の変化を追う必要がある。
 それらを解析するために擬似時間解析は使用される。擬似時間解析とは細胞の分化過程や疾患の進行などにおける細胞状態の遷移を理解するため、遺伝子発現データに基づき、細胞間の類似性を指標として擬似的な時間軸に沿って並び替える手法である。
 高次元データを擬似時間という1次元の特徴として捉えることであり、分化や疾患などの時系列の挙動を要約することができる[2]。
-single-cell RNA-seq データを使用して擬似時間解析を行う場合、各細胞の遺伝子発現は連続的に変化すると仮定する。つまり遺伝子発現プロファイルが似ている細胞は同じ分化の状態にあり時間軸としても近い位置にあると仮定するということである。
-擬似時間解析では高次元データであるsingle-cell RNA-seq データの各細胞の位置の情報を元に各細胞を並び替える。
+シングルセルRNAシーケンスデータを使用して擬似時間解析を行う場合、各細胞の遺伝子発現は連続的に変化すると仮定する。つまり遺伝子発現プロファイルが似ている細胞は同じ分化の状態にあり時間軸としても近い位置にあると仮定するということである。
+擬似時間解析では高次元データであるシングルセルRNAシーケンスデータの各細胞の位置の情報を元に各細胞を並び替える。
 この並びは分化の過程という時間軸のなかの順番ということになる。
-一般的に次の画像の手順で解析は行われる。
-与えられたデータに対して何らかの方法で細胞の分化の過程である軌跡を描く。よく最小全域木やグラフ埋め込みなどが使用される。
-その線に向かって各細胞を投射し、スタートの細胞から各分化経路ごとに細胞の並びを見ることで擬似時間を得ることができる。
-\vspace{1zh}
+一般的に次の図2のように解析は行われる。
+与えられたデータ(図2.a)に対して何らかの方法で細胞の分化の過程である軌跡(図2.b)を描く。よく最小全域木やグラフ埋め込みなどが使用される。
+その線に向かって各細胞を投射し(図2.b)、スタートの細胞から各分化経路ごとに細胞の並び(図2.c)を見ることで擬似時間を得ることができる。
+\begin{tcolorbox}[colframe=black!70, colback=white, boxrule=0.2mm, width=\textwidth, arc=2mm]
+  \begin{center}
 \includegraphics[width=\textwidth]{./img/Slide23.png}
-\vspace{1zh}
-
+  \end{center}
+  \scriptsize % ここでフォントサイズを小さくします
+  \textbf{図2:} 擬似時間解析の流れ
+  \textbf{a} 前処理等を行ったデータ(次元数は問わない)
+  \textbf{b} データ空間上に状態遷移の軌跡を描いた後に各点を奇跡にプロットする
+  \textbf{c} スタート点から点を並べ替えた結果
+\end{tcolorbox}
 
 \subsection{擬似時間解析ツール}\label{sec-intro-3}
 擬似時間解析で使用されるソフトウェアについて説明し、それらの課題と本研究でどのように課題を解決したかについて説明する。
@@ -117,22 +126,22 @@ Slingshotでは、次元削減後のデータをクラスタリングし、そ�
 
 \subsection{解析方法の概要}\label{subsec-instruction-1}
 \bigskip
-前処理済みの single-cell RNA-seq データを入力とし、擬似時間推定に至るまでの解析手順を以下に示す。
-まず、高次元データの次元削減を行い、高次元空間における細胞の分布を低次元にマッピングする。次に、得られた低次元データを画像化し、細線化処理を施すことで細胞間の関係を表す木構造を抽出する。続いて、適切なクラスタ数を決定し、細胞間の関係性を考慮した制約付き最小全域木を構築する。最後に、Slingshot を用いて曲線フィッティングを行い、細胞分化の軌跡を推定する。各解析ステップにおける結果を図 1 に示した。
+前処理済みの シングルセルRNAシーケンスデータを入力とし、擬似時間推定に至るまでの解析手順を以下に示す。
+まず、高次元データの次元削減を行い、高次元空間における細胞の分布を低次元にマッピングする。次に、得られた低次元データを画像化し、細線化処理を施すことで細胞間の関係を表す木構造を抽出する。続いて、適切なクラスタ数を決定し、細胞間の関係性を考慮した制約付き最小全域木を構築する。最後に、Slingshot を用いて曲線フィッティングを行い、細胞分化の軌跡を推定する。各解析ステップにおける結果を図3 に示した。
 \begin{enumerate}
   \item \textbf{データの次元削減}  \\
-  高次元データをumap等の次元削減アルゴリズムで2次元データに次元削減する(図1.a)。
+  高次元データをumap等の次元削減アルゴリズムで2次元データに次元削減する(図3.a)。
   \item \textbf{データの画像化}  \\
-  二次元データをヒストグラムを使用して画像化する(図1.b)。画像化することによりデータの輪郭を把握することができる。
+  二次元データをヒストグラムを使用して画像化する(図3.b)。画像化することによりデータの輪郭を把握することができる。
   \item \textbf{細線化による木構造の抽出}  \\
-  データの輪郭(図1.b)を細線化アルゴリズムにより処理し、おおまかな木構造(図1.c)を取得する。この木構造は、データの大まかな分岐と形状を反映する。
+  データの輪郭(図3.b)を細線化アルゴリズムにより処理し、おおまかな木構造(図3.c)を取得する。この木構造は、データの大まかな分岐と形状を反映する。
   \item \textbf{クラスタ数の決定}   \\
-  木構造から葉と分岐の数を抽出し、それらの合計を$n$としてクラスタ数(図1.c)を自動的に決定する。その後、入力データをこのクラスタ数に基づいてKmeansでクラスタリングする(図1.d)。
+  木構造から葉と分岐の数を抽出し、それらの合計を$n$としてクラスタ数(図3.c)を自動的に決定する。その後、入力データをこのクラスタ数に基づいてKmeansでクラスタリングする(図3.d)。
   \item \textbf{制約付き最小全域木の構築}   \\
-  クラスタリング済みデータを用いて、細胞状態が一度に3つ以上に分岐しないという生物学的制約を考慮した最小全域木を構築する(図1.d)。
+  クラスタリング済みデータを用いて、細胞状態が一度に3つ以上に分岐しないという生物学的制約を考慮した最小全域木を構築する(図3.d)。
   クラスタの重心の次数を3以下に制約をつけることで、これを実現する。
   \item \textbf{Slingshotによる曲線フィッティング}   \\
-  制約付き最小全域木と入力データを基に、\texttt{Slingshot} のprincipal curveを使用して滑らかな軌跡を描画する(図1.e)。これにより、生物学的に解釈しやすい細胞の擬似時間推定が可能となる。
+  制約付き最小全域木と入力データを基に、\texttt{Slingshot} のprincipal curveを使用して滑らかな軌跡を描画する(図3.e)。これにより、生物学的に解釈しやすい細胞の擬似時間推定が可能となる。
 \end{enumerate}
 
 \begin{tcolorbox}[colframe=black!70, colback=white, boxrule=0.2mm, width=\textwidth, arc=2mm]
@@ -142,7 +151,7 @@ Slingshotでは、次元削減後のデータをクラスタリングし、そ�
       \includegraphics[height=0.3\textheight]{./img/Slide3.jpg}
   \end{center}
   \scriptsize % ここでフォントサイズを小さくします
-  \textbf{図１:} Bone marrow mononuclear cellを用いた改良後のslingshotによる解析結果
+  \textbf{図3:} Bone marrow mononuclear cellを用いた改良後のslingshotによる解析結果
   \textbf{a} 入力データの散布図
   \textbf{b} 解像度を指定して画像化した入力データ
   \textbf{c} 赤線は細線化した結果。黄点の数をクラスタ数nとする。
@@ -156,7 +165,7 @@ Slingshotでは、次元削減後のデータをクラスタリングし、そ�
 
   \begin{itemize}
     \item 凸包\\
-    点の集合に対してその外郭を形成する手法で、計算幾何学における形状抽出の技法の一つである(図2)[13]。
+    点の集合に対してその外郭を形成する手法で、計算幾何学における形状抽出の技法の一つである(図4)[13]。
     データが示す「空間的なアウトライン」を表現するために使用される。
     SLICER[4]において、近傍数の選択に凸包の面積を利用している。
     本研究ではその手法にヒントを得てデータの画像化の際に凸包の面積値を基準値としている。
@@ -165,7 +174,7 @@ Slingshotでは、次元削減後のデータをクラスタリングし、そ�
           \includegraphics[width=\textwidth]{./img/Slide15.jpg}
       \end{center}
         \scriptsize % ここでフォントサイズを小さくします
-        \textbf{図2:} ランダムな散布図に対する凸包
+        \textbf{図4:} ランダムな散布図に対する凸包
     \end{tcolorbox}
 
     \item データの画像化\\
@@ -173,7 +182,7 @@ Slingshotでは、次元削減後のデータをクラスタリングし、そ�
     ヒストグラムを使用して点を膨らませ、ピクセルに詰め込んで画像化する。
     ヒストグラムでは、データを一定のビンに分割して表示する。ビンの境界値はデータ範囲を区切る位置を示し、
     ヒストグラムのビン境界を変更することで、データを画像化する際の解像度を調整できる。
-    ビン境界によってデータがどのような画像に変化されるかを比較した結果を図3に示した。
+    ビン境界によってデータがどのような画像に変化されるかを比較した結果を図5に示した。
 
     本研究は、データの分散値に基づいて初期解像度を決定し、初期解像度の10倍までを9回の解像度で指定して画像化する。
     画像化後、連結オブジェクトの数、オブジェクトの面積を計算し、細線化処理を実施してクラスタ数nを取得する。
@@ -191,7 +200,7 @@ Slingshotでは、次元削減後のデータをクラスタリングし、そ�
           \includegraphics[width=\textwidth]{./img/Slide17.jpg}
       \end{center}
         \scriptsize % ここでフォントサイズを小さくします
-        \textbf{図3:} 画像化したデータの比較図
+        \textbf{図5:} 画像化したデータの比較図
         \textbf{a} ランダムなデータの散布図
         \textbf{b} 境界ビンに30を指定した時の画像
         \textbf{c} 境界ビンに10を指定した時の画像
@@ -200,7 +209,7 @@ Slingshotでは、次元削減後のデータをクラスタリングし、そ�
     \item 細線化処理\\
     データの大まかな輪郭から木構造を作り、その木構造の葉と分岐の数をクラスタ数nとする。
     画像の輪郭から木構造を構築するために、細線化を使用する。
-    細線化は、2値画像の画素領域を外側から削減し、幅1画素の線画像に変換する処理である[11]（図4）。
+    細線化は、2値画像の画素領域を外側から削減し、幅1画素の線画像に変換する処理である[11]（図6）。
     これにより、物体を中心線で表現でき、物体固有の特徴を把握することができる。
     得られた木構造の葉と分岐点をクラスタの初期重心として設定し、点の数をクラスタ数nとして使用する。
     \begin{tcolorbox}[colframe=black!70, colback=white, boxrule=0.2mm, width=\textwidth, arc=2mm]
@@ -208,7 +217,7 @@ Slingshotでは、次元削減後のデータをクラスタリングし、そ�
           \includegraphics[width=\textwidth]{./img/Slide18.jpg}
       \end{center}
         \scriptsize % ここでフォントサイズを小さくします
-        \textbf{図4:} 細線化処理
+        \textbf{図6:} 細線化処理
         \textbf{a} 元となる画像
         \textbf{b} 細線化した結果
     \end{tcolorbox}
@@ -219,9 +228,9 @@ Slingshotでは、次元削減後のデータをクラスタリングし、そ�
 具体的には、各頂点の次数を3以下に制限する制約を加えている。
 \begin{itemize}
   \item 最小全域木の定式化\\
-  最小全域木とは重み付き無向グラフにおいて、すべての頂点を連結しつつ、全ての辺の距離の合計が最小(1)となるように選ばれた部分グラフである(図5.b)。
+  最小全域木とは重み付き無向グラフにおいて、すべての頂点を連結しつつ、全ての辺の距離の合計が最小(1)となるように選ばれた部分グラフである(図7.b)。
   全域木であるということは、全ての頂点が連結であるかつ閉路を含まないことが必要条件である(3)。
-  全域木が閉路を含まないとう必要条件を満たすためには部分的な閉路(図5.d)がないことを保証する部分順回路除去制約(4)が必要である。
+  全域木が閉路を含まないとう必要条件を満たすためには部分的な閉路(図7.d)がないことを保証する部分順回路除去制約(4)が必要である。
   最小全域木を整数計画法で定式化する必要があるため頂点間に辺があれば1,無ければ0となるxを導入する(2)。これらを踏まえると定式化した最小全域木は以下になる。\\
 $G = (V, E)$ : 無向グラフ\\
 $i, j \in V$ : グラフ $G$ の頂点集合\\
@@ -249,7 +258,7 @@ $d_e$ : 各辺 $e \in E$ の長さ\\
       \includegraphics[width=\textwidth]{./img/Slide21.jpg}
   \end{center}
     \scriptsize % ここでフォントサイズを小さくします
-    \textbf{図5:} 細線化処理
+    \textbf{図7:} 細線化処理
     \textbf{a} 元となる画像
     \textbf{b} 細線化した結果
     \textbf{c} 隣接距離行列
@@ -258,7 +267,7 @@ $d_e$ : 各辺 $e \in E$ の長さ\\
 
 \item 次数制約\\
 細胞状態が一度に3つ以上に分岐しないという生物学的制約を追加するために次数制約を使用する。
-次数とは注目している頂点に接続されている辺の数である(図6)。
+次数とは注目している頂点に接続されている辺の数である(図8)。
 $\sum_{e \in \delta(\{i\})} x_e \leq 3$ として次数を３以下にすることで実現する。
 最小全域木を解く方法は整数計画法以外にも存在するが、次数制約を追加する必要があるため整数計画法を使用している。
 \begin{tcolorbox}[colframe=black!70, colback=white, boxrule=0.2mm, width=\textwidth, arc=2mm]
@@ -266,7 +275,7 @@ $\sum_{e \in \delta(\{i\})} x_e \leq 3$ として次数を３以下にするこ�
       \includegraphics[width=\textwidth]{./img/Slide19.jpg}
   \end{center}
     \scriptsize % ここでフォントサイズを小さくします
-    \textbf{図6:} 頂点の次数
+    \textbf{図8:} 頂点の次数
 \end{tcolorbox}
 最終的な次数制約付き最小全域木の定式化は以下になる。
 
@@ -294,12 +303,12 @@ NP困難となるのは、例えば、次数がすべて2とすると、NP困難
 本研究の方法でクラスタリング数nを決定し、制約ありなしで同じクラスタリング結果を使用している。
 \begin{itemize}
   \item Bone marrow mononuclear cell\\
-  次数制約無しの解析結果が図7.c および 図7.dである。図7.d および 図7.e には、次数が4の頂点が存在し、細胞が3つの状態に遷移していることが示されている。
-  次数制約有りの解析結果が図7.a および 図7.bである。図7.a および 図7.b では、当該頂点の次数が3に減少しており、この現象が解消されている。
+  次数制約無しの解析結果が図9.c および 図9.dである。図9.d および 図9.e には、次数が4の頂点が存在し、細胞が3つの状態に遷移していることが示されている。
+  次数制約有りの解析結果が図9.a および 図9.bである。図9.a および 図9.b では、当該頂点の次数が3に減少しており、この現象が解消されている。
 
 \item Human fetal immune cell \\
-次数制約無しの解析結果が図8.c および 図8.dである。図8.d および 図8.e には、次数が4の頂点が存在し、細胞が3つの状態に遷移していることが示されている。
-次数制約有りの解析結果が図8.a および 図8.bである。図8.a および 図8.b では、当該頂点の次数が3に減少しており、この現象が解消されている。
+次数制約無しの解析結果が図10.c および 図10.dである。図10.d および 図10.e には、次数が4の頂点が存在し、細胞が3つの状態に遷移していることが示されている。
+次数制約有りの解析結果が図10.a および 図10.bである。図10.a および 図10.b では、当該頂点の次数が3に減少しており、この現象が解消されている。
 \end{itemize}
 
 \begin{tcolorbox}[colframe=black!70, colback=white, boxrule=0.2mm, width=\textwidth, arc=2mm]
@@ -308,7 +317,7 @@ NP困難となるのは、例えば、次数がすべて2とすると、NP困難
       \includegraphics[width=\textwidth]{./img/Slide5.jpg}
   \end{center}
   \scriptsize % ここでフォントサイズを小さくします
-  \textbf{図7:} Bone marrow mononuclear cellのデータを使用した解析結果の比較図
+  \textbf{図9:} Bone marrow mononuclear cellのデータを使用した解析結果の比較図
   \textbf{a} 制約有り最小全域木
   \textbf{b} 制約有りの解析結果
   \textbf{c} 制約無しの最小全域木
@@ -320,7 +329,7 @@ NP困難となるのは、例えば、次数がすべて2とすると、NP困難
       \includegraphics[width=\textwidth]{./img/Slide7.jpg}
   \end{center}
   \scriptsize % ここでフォントサイズを小さくします
-  \textbf{図8:} Human fetal immune cellのデータを使用した解析結果の比較図
+  \textbf{図10:} Human fetal immune cellのデータを使用した解析結果の比較図
   \textbf{a} 制約有り最小全域木
   \textbf{b} 制約有りの解析結果
   \textbf{c} 制約無しの最小全域木
@@ -332,10 +341,10 @@ NP困難となるのは、例えば、次数がすべて2とすると、NP困難
 入力データとサンプリング済データに対して最小全域木を構築し、それらを比較した。
 サンプリングには、データをランダムに60\%削減したものを使用した。
 検証には、Bone marrow mononuclear cell、Hematopoiesis、および Human fetal immune cell のデータを用いた。
-各データの検証結果は図9に示した。また各データのクラスタ数の情報を表1に示した。
+各データの検証結果は図11に示した。また各データのクラスタ数の情報を表1に示した。
 検証の結果、最小全域木の大まかな形状には大きな変化は見られなかった。
 しかし、細かい分岐の認識には違いが生じた。
-具体的には、図9.c および図9.f に示すように、左側の分岐の認識順序が変化した。
+具体的には、図11.c および図11.f に示すように、左側の分岐の認識順序が変化した。
 また、クラスタ数にも変化が確認された。データを画像化する際に各点を膨らませて画素として認識する過程で、各点の距離が急激に変化することで、画像の形状が大きく変わり、
 クラスタ数に影響を与えたと考えられる。
 特に、Bone marrow mononuclear cell と Human fetal immune cell のデータは分散が低く、
@@ -347,15 +356,15 @@ NP困難となるのは、例えば、次数がすべて2とすると、NP困難
   \hline
   \textbf{データ} & \textbf{データ数} & \textbf{ビン境界} & \textbf{クラスタ数}  \\
   \hline
-  図9.a          & 6224 & 50 & 25           \\
-  図9.b          & 3734 & 60 & 36           \\
-  図9.c          & 19764 & 50 & 50           \\
-  図9.d          & 11858 & 40 & 41           \\
-  図9.e          & 499116 & 100 & 71           \\
-  図9.f          & 29469 & 100 & 76           \\
+  図11.a          & 6224 & 50 & 25           \\
+  図11.b          & 3734 & 60 & 36           \\
+  図11.c          & 19764 & 50 & 50           \\
+  図11.d          & 11858 & 40 & 41           \\
+  図11.e          & 499116 & 100 & 71           \\
+  図11.f          & 29469 & 100 & 76           \\
   \hline
   \end{tabular}
-  \caption{\textbf{表1:} 図9の自動決定されたビン境界とクラスタ数}
+  \caption{\textbf{表1:} 図11の自動決定されたビン境界とクラスタ数}
   \end{table}
 
 \begin{tcolorbox}[colframe=black!70, colback=white, boxrule=0.2mm, width=\textwidth, arc=2mm]
@@ -365,7 +374,7 @@ NP困難となるのは、例えば、次数がすべて2とすると、NP困難
       \includegraphics[height=0.3\textheight]{./img/Slide14.jpg}
   \end{center}
     \scriptsize % ここでフォントサイズを小さくします
-    \textbf{図9:} 最小全域木の比較図
+    \textbf{図11:} 最小全域木の比較図
   \textbf{ab} Bone marrow mononuclear cell。
   \textbf{cd} Human fetal immune cell。
   \textbf{ef} Hematopoiesis。
@@ -376,9 +385,9 @@ NP困難となるのは、例えば、次数がすべて2とすると、NP困難
   \newpage
 \subsection{Monocle3との比較}\label{subsec-instruction-4}
 本研究の実用性を検証するためにC. elegansのデータを使用してMonocle3の解析結果と比較した。
-結果は図10に記載した。
-Monocle3は細胞の軌道を滑らかにフィッティングするわけではないので、きめ細やかな軌道予測になっている(図10.c)。
-制約有りの結果(図10.a)と制約無しの結果(図10.b)を比較すると、制約無しの結果にはMonocle3の結果(図10.c)にはない3方向への分岐が発生している。
+結果は図12に記載した。
+Monocle3は細胞の軌道を滑らかにフィッティングするわけではないので、きめ細やかな軌道予測になっている(図12.c)。
+制約有りの結果(図12.a)と制約無しの結果(図12.b)を比較すると、制約無しの結果にはMonocle3の結果(図12.c)にはない3方向への分岐が発生している。
 制約をつけることにより細胞の軌道分岐の認識能力が向上した。
 
 \subsection{予測精度}\label{subsec-instruction-5}
@@ -417,7 +426,7 @@ HematopoiesisデータのDNAバーコーディング情報とシーケンスデ�
         \includegraphics[width=\textwidth]{./img/Slide11.jpg}
     \end{center}
       \scriptsize % ここでフォントサイズを小さくします
-      \textbf{図10:} Monocle3とSlingshotの解析結果の比較図。C. elegansのデータを使用している。
+      \textbf{図12:} Monocle3とSlingshotの解析結果の比較図。C. elegansのデータを使用している。
     \textbf{a} 制約有りのSlingshotの解析結果
     \textbf{b} Slingshotの解析結果
     \textbf{c} Monocle3の解析結果
@@ -430,7 +439,7 @@ HematopoiesisデータのDNAバーコーディング情報とシーケンスデ�
 \subsection{Bone marrow mononuclear cell}\label{data-12}
 12人の健康なヒトドナーから収集された骨髄単核細胞のシングルセルマルチオミクスデータである。
 (生データは、NCBIのGSE194122からダウンロードできる。前処理済みデータは次のリンクから確認できる:\url{https://openproblems.bio/events/2021-09_neurips/documentation/data/dataset.html})
-データのダウンロードには、単一細胞ゲノミクスにおける最適輸送アプリケーション用のフレームワークであるMOSCOT[7]を使用した。具体的には、MOSCOTの「Translating multiomics single-cell data」チュートリアルに従い、
+データのダウンロードには、単一細胞ゲノミクスにおける最適輸送アプリケーション用のフレームワークであるMOSCOT[7]を使用した。具体的には、MOSCOTの「Translating multiomics Single Cell data」チュートリアルに従い、
 データの処理を行った。(MOSCOTのチュートリアルに関する詳細は、次のリンクから確認できる:\url{https://moscot.readthedocs.io/en/latest/notebooks/tutorials/600_tutorial_translation.html})
 
 \subsection{Human fetal immune cell}\label{data-13}
@@ -454,9 +463,9 @@ DNAバーコードは、特定のDNA領域にランダムな挿入するバー�
 \section{議論}\label{sec-11}
 \subsection{クラスタ数と分岐認識能力}\label{subsec-22}
 クラスタ数の変化は小全域木の形に影響を与えることでSlingshotの軌道予測結果を変化させる。
-図11にクラスタ数による最小全域木の比較を記載した。
-自動決定されたクラスタ数76(図11.a)を基準として考えると、クラスタ数35(図11.b)の場合はクラスタ数が小さすぎるので細かな分岐が１つのクラスタとして認識され分岐がうまく認識されない。
-一方クラスタ数100(図11.c)の場合は、クラスタ数が大きくクラスタ数76(図11.a)には無い分岐が発生している。
+図13にクラスタ数による最小全域木の比較を記載した。
+自動決定されたクラスタ数76(図13.a)を基準として考えると、クラスタ数35(図13.b)の場合はクラスタ数が小さすぎるので細かな分岐が１つのクラスタとして認識され分岐がうまく認識されない。
+一方クラスタ数100(図13.c)の場合は、クラスタ数が大きくクラスタ数76(図13.a)には無い分岐が発生している。
 クラスタ数を適度な範囲に設定することは軌道予測において重要であることが示されている。
 
 
@@ -473,7 +482,7 @@ DNAバーコードは、特定のDNA領域にランダムな挿入するバー�
     \includegraphics[width=\textwidth]{./img/Slide9.jpg}
   \end{center}
 \scriptsize % ここでフォントサイズを小さくします
-\textbf{図11:} クラスタ数による最小全域木の比較図。Hematopoiesisのデータを使用している。
+\textbf{図13:} クラスタ数による最小全域木の比較図。Hematopoiesisのデータを使用している。
   \textbf{a} クラスタ数76
   \textbf{b} クラスタ数35
   \textbf{c} クラスタ数100
@@ -576,7 +585,7 @@ DNAバーコードは、特定のDNA領域にランダムな挿入するバー�
 \newpage
 \acknowledgments				% 謝辞
 本研究を進めるにあたり御指導、御助言を賜り、暖かく見守ってくださった阿久津達也教授に深く感謝いたします。日頃から数々の有益な御助言、御協力をいただきました情報学研究科の皆様に深く感謝いたします。
-さらに、本研究の予備的な研究を行うにあたり、有益な助言と協力をいただいた香港大学博士課程 Jiaying Zhao 氏にも、深く感謝しここに誠意を表します。
+さらに、本研究を行うにあたり、有益な協力をいただいた香港大学博士課程 Jiaying Zhao 氏にも、深く感謝しここに誠意を表します。
 \end{spacing}
 \nocite{*}
 \bibliographystyle{kuisunsrt}			% 文献スタイルの指定
@@ -609,4 +618,7 @@ DNAバーコードは、特定のDNA領域にランダムな挿入するバー�
   \item OS: macOS 14.6.1
 \end{itemize}
 
+\subsection{翻訳について}\label{translat}
+英文の内容梗概を作成するにあたりDeepL(\url{https://www.deepl.com/ja/translator})を用いて文章を校正した。
+\end{document}
 \end{document}
