@@ -1,0 +1,14 @@
+# Fdb version 4
+["dvipdf"] 0 "latex_out/kuisthesis_jp.dvi" "latex_out/kuisthesis_jp.pdf" "latex_out/kuisthesis_jp" 0 -1
+  "latex_out/kuisthesis_jp.dvi" 0 -1 0 "latex"
+  (generated)
+  "latex_out/kuisthesis_jp.pdf"
+  (rewritten before read)
+["latex"] 0 "/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex" "latex_out/kuisthesis_jp.dvi" "kuisthesis_jp" 0 -1
+  "/Users/iwakitakuma/study_latex/doc/kuisthesis_jp.tex" 0 -1 0 ""
+  "latex_out/kuisthesis_jp.aux" 0 -1 0 "latex"
+  (generated)
+  "latex_out/kuisthesis_jp.aux"
+  "latex_out/kuisthesis_jp.dvi"
+  "latex_out/kuisthesis_jp.log"
+  (rewritten before read)
