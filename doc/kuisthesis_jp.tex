@@ -229,27 +229,34 @@ Slingshotでは、次元削減後のデータをクラスタリングし、そ�
 \begin{itemize}
   \item 最小全域木の定式化\\
   最小全域木とは重み付き無向グラフにおいて、すべての頂点を連結しつつ、全ての辺の距離の合計が最小(1)となるように選ばれた部分グラフである(図7.b)。
-  全域木であるということは、全ての頂点が連結であるかつ閉路を含まないことが必要条件である(3)。
-  全域木が閉路を含まないとう必要条件を満たすためには部分的な閉路(図7.d)がないことを保証する部分順回路除去制約(4)が必要である。
-  最小全域木を整数計画法で定式化する必要があるため頂点間に辺があれば1,無ければ0となるxを導入する(2)。これらを踏まえると定式化した最小全域木は以下になる。\\
+  最小全域木を整数計画法で定式化する必要があるため頂点間に辺があれば1,無ければ0となる決定変数$x$を導入する(2)。
+  全域木であるということは、全ての頂点が連結であり、かつ閉路を含まないことが必要である(3)。
+  また全域木が閉路を含まないという条件を満たすためには部分的な閉路(図7.d)がないことを保証する部分順回路除去制約(4)(5)が必要である。
+  $y_{ij}^{k}$は頂点$k$から見たとき、辺$(i,j)$ にフローが流れているかを管理する補助変数である。
+  決定変数$x$と補助変数$y$の関係式(4)は、辺 $(i,j)$が選ばれた場合のみ、フロー変数$y$が活性化されることを保証する。
+  フロー制約(5)は各辺$(i,j)$において、どこかの頂点$k$を経由する流れが必ず1つ存在することを保証する。フロー制約によりグラフ上に1つの有向木が形成される。
+  有向木の根から頂点$k$に向かう道の一部として辺$(i,j)$が使われているかどうかを表すのが補助変数$y$である。
+  これらを踏まえると定式化した最小全域木は以下になる。\\
 $G = (V, E)$ : 無向グラフ\\
 $i, j \in V$ : グラフ $G$ の頂点集合\\
-$(i, j) \in E, e \in E$ : グラフ $G$ の辺集合\\
-$d_e$ : 各辺 $e \in E$ の長さ\\
+$(i, j) \in E$ , $e \in E$ : グラフ $G$ の辺集合\\
+$d_{ij}$ : 頂点 ${i,j}$ 間の長さ\\
 \text{minimize} \\
 \begin{equation}
-  \sum_{e \in E} d_e x_e
+  \sum_{(i,j) \in E} d_{ij} x_{ij}
 \end{equation}
-\\
 \text{s.t.}\\
 \begin{equation}
-  x_e \in \{0, 1\} \quad \forall e \in E
+  x_{ij}, y_{ij}^{k}, y_{ji}^{k} \in \{0,1\}, \quad \forall (i,j) \in E, k \in V
 \end{equation}
 \begin{equation}
-  \sum_{e \in E} x_e = |V| - 1
+  \sum_{(i,j) \in E} x_{ij} = |V| - 1
 \end{equation}
 \begin{equation}
-  \sum_{i \in S} \sum_{j \in V \setminus S} x_{ij} \geq 1 \quad \forall S \subset V
+  y_{ij}^{k} + y_{ji}^{k} = x_{ij}, \quad \forall (i,j) \in E, k \in V
+\end{equation}
+\begin{equation}
+  \sum_{k \in V \setminus \{i,j\}} y_{ik}^{j} + x_{ij} = 1, \quad \forall (i,j) \in E
 \end{equation}
 
 \begin{tcolorbox}[colframe=black!70, colback=white, boxrule=0.2mm, width=\textwidth, arc=2mm]
@@ -268,7 +275,7 @@ $d_e$ : 各辺 $e \in E$ の長さ\\
 \item 次数制約\\
 細胞状態が一度に3つ以上に分岐しないという生物学的制約を追加するために次数制約を使用する。
 次数とは注目している頂点に接続されている辺の数である(図8)。
-$\sum_{e \in \delta(\{i\})} x_e \leq 3$ として次数を３以下にすることで実現する。
+$\sum_{e \in \delta(\{i\})} x_e \leq 3 \quad \forall i \in V$ として次数を３以下にすることで実現する。
 最小全域木を解く方法は整数計画法以外にも存在するが、次数制約を追加する必要があるため整数計画法を使用している。
 \begin{tcolorbox}[colframe=black!70, colback=white, boxrule=0.2mm, width=\textwidth, arc=2mm]
   \begin{center}
@@ -280,12 +287,13 @@ $\sum_{e \in \delta(\{i\})} x_e \leq 3$ として次数を３以下にするこ�
 最終的な次数制約付き最小全域木の定式化は以下になる。
 
 \text{minimize} \\
-\quad \quad \quad $\sum_{e \in E} d_e x_e$\\
+\quad \quad \quad $\sum_{(i,j) \in E} d_{ij} x_{ij}$\\
 \text{s.t.}\\
-\quad \quad \quad $x_e \in \{0, 1\} \quad \forall e \in E.$\\
- \quad \quad \quad$\sum_{e \in E} x_e = |V| - 1,$\\
-\quad \quad \quad $\sum_{i \in S} \sum_{j \in V \setminus S} x_{ij} \geq 1 \quad \forall S \subset V,$\\
-\quad \quad \quad $\sum_{e \in \delta(\{i\})} x_e \leq 3 \quad \forall i \in V,$\\
+\quad \quad \quad $x_{ij}, y_{ij}^{k}, y_{ji}^{k} \in \{0,1\}, \quad \forall (i,j) \in E, k \in V$\\
+ \quad \quad \quad$\sum_{(i,j) \in E} x_{ij} = |V| - 1$\\
+ \quad \quad \quad$y_{ij}^{k} + y_{ji}^{k} = x_{ij}, \quad \forall (i,j) \in E, k \in V$\\
+\quad \quad \quad $\sum_{k \in V \setminus \{i,j\}} y_{ik}^{j} + x_{ij} = 1, \quad \forall (i,j) \in E$\\
+\quad \quad \quad $\sum_{e \in \delta(\{i\})} x_e \leq 3 \quad \forall i \in V$\\
 
 制約なしの最小全域木はクラスカルのアルゴリズムなどを使用して多項式時間で計算できることが知られているが、制約付きの場合はNP困難となる。
 NP困難となるのは、例えば、次数がすべて2とすると、NP困難である巡回セールスマン問題を帰着できるからである。
