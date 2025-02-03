@@ -1,0 +1,24 @@
+\documentclass[english]{kuisthesis}
+\usepackage{geometry}
+
+\begin{document}
+
+ここは縦書きです。
+
+\tcbox[colframe=black,colback=white]{
+    \begin{minipage}{3in}
+    \rotatebox{90}{縦書きの文中で横書きを実現する。y}
+    \tcbox[colframe=black,colback=white]{
+        \begin{minipage}{3in}
+        \rotatebox{90}{縦書きの文中にある横書きのミニページ中で縦書きを実現する。t}
+        \tcbox[colframe=black,colback=white]{
+            \begin{minipage}{2in}
+            \rotatebox{90}{Further inside the minipage, text is inserted yokogaki plus rotated 90 degrees clockwise. Alphabets only. z}
+            \end{minipage}
+        }
+        \end{minipage}
+    }
+    \end{minipage}
+}
+
+\end{document}
