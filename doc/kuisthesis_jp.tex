@@ -32,7 +32,7 @@
   具体的には次の方法で解析を行う。
   2次元に次元削減後の シングルセルRNAシーケンシングデータをヒストグラムを用いて画像として認識する。
   その画像に対して細線化処理をすることで大まかな木構造を計算する。
-  その木構造の分岐と葉の数を調べることでシングルセルRNAシーケンシングデータのクラスタ数を決定する。
+  その木構造の分岐と葉の点とその数を調べることでシングルセルRNAシーケンシングデータのクラスタリングに使用する初期重心とクラスタ数を決定する。
   シングルセルRNAシーケンシングデータをクラスタリングしその重心と決定したクラスタ数を用いて次数制限付き最小全域木を構築することで、
   「細胞の状態が一度に3つ以上には遷移しない」という生物学的前提を考慮した細胞状態の遷移構造とする。
   得られた最小全域木をprincipal curveで曲線にフィッティングすることで細胞系統擬似時間の軌道とする。
@@ -52,7 +52,7 @@ We solved this problem by using image processing to automatically determine the 
 Specifically, the following methods are used to analyze the data.
   Single Cell RNA-seq data reduced to two dimensions are recognized as images using histograms.
   The rough tree structure is computed by performing a skeletonization process on the image.
-  The number of clusters in the Single Cell RNA-seq data is determined by examining the number of branches and leaves in the tree structure.
+  Determine the initial center of gravity and number of clusters to use for clustering single-cell RNA sequencing data by examining the branch and leaf points and their number in the tree structure.
   By clustering the Single Cell RNA-seq data and constructing a degree-limited minimum spanning tree using the center of gravity and the determined number of clusters
   , the transition structure of the cellular state is constructed considering the biological assumption that cellular states transition no more than three ways simultaneously.
   The resulting minimum spanning tree is fitted to a curve with a principal curve to obtain a cellular phylogenetic pseudo-time trajectory.
@@ -107,7 +107,7 @@ Specifically, the following methods are used to analyze the data.
   \scriptsize % ここでフォントサイズを小さくします
   \textbf{図2:} 擬似時間解析の流れ
   \textbf{a} 前処理等を行ったデータ(次元数は問わない)
-  \textbf{b} データ空間上に状態遷移の軌跡を描いた後に各点を奇跡にプロットする
+  \textbf{b} データ空間上に状態遷移の軌跡を描いた後に各点を軌跡にプロットする
   \textbf{c} スタート点から点を並べ替えた結果
 \end{tcolorbox}
 
@@ -135,8 +135,8 @@ Slingshotでは、次元削減後のデータをクラスタリングし、そ�
   二次元データをヒストグラムを使用して画像化する(図3.b)。画像化することによりデータの輪郭を把握することができる。
   \item \textbf{細線化による木構造の抽出}  \\
   データの輪郭(図3.b)を細線化アルゴリズムにより処理し、おおまかな木構造(図3.c)を取得する。この木構造は、データの大まかな分岐と形状を反映する。
-  \item \textbf{クラスタ数の決定}   \\
-  木構造から葉と分岐の数を抽出し、それらの合計を$n$としてクラスタ数(図3.c)を自動的に決定する。その後、入力データをこのクラスタ数に基づいてKmeansでクラスタリングする(図3.d)。
+  \item \textbf{初期重心とクラスタ数の決定}   \\
+  木構造から葉と分岐の点(図3.c)を抽出し、それらをクラスタの初期重心とする。その後、入力データを初期重心に基づいてKmeansでクラスタリングする(図3.d)。クラスタ数は葉と分岐の点の数になる。
   \item \textbf{制約付き最小全域木の構築}   \\
   クラスタリング済みデータを用いて、細胞状態が一度に3つ以上に分岐しないという生物学的制約を考慮した最小全域木を構築する(図3.d)。
   クラスタの重心の次数を3以下に制約をつけることで、これを実現する。
@@ -154,13 +154,13 @@ Slingshotでは、次元削減後のデータをクラスタリングし、そ�
   \textbf{図3:} Bone marrow mononuclear cellを用いた改良後のslingshotによる解析結果
   \textbf{a} 入力データの散布図
   \textbf{b} 解像度を指定して画像化した入力データ
-  \textbf{c} 赤線は細線化した結果。黄点の数をクラスタ数nとする。
+  \textbf{c} 赤線は細線化した結果。黄点はクラスタリングで使用する初期重心。黄点の数をクラスタ数nとする。
   \textbf{d} クラスタ数nでクラスタリング済みデータに対して最小全域木を構築した結果
   \textbf{e} 最終的な解析結果
 \end{tcolorbox}
 \newpage
 \subsection{画像処理}\label{subsec-structure-1}
-本研究では、データを画像化した後、その画像から木構造を計算し、得られた木構造に基づいてクラスタ数を決定する。
+本研究では、データを画像化した後、その画像から木構造を計算し、得られた木構造に基づいてクラスタの初期重心とクラスタ数を決定する。
 画像化からクラスタ数決定までの方法を説明する。
 
   \begin{itemize}
@@ -185,7 +185,7 @@ Slingshotでは、次元削減後のデータをクラスタリングし、そ�
     ビン境界によってデータがどのような画像に変化されるかを比較した結果を図5に示した。
 
     本研究は、データの分散値に基づいて初期解像度を決定し、初期解像度の10倍までを9回の解像度で指定して画像化する。
-    画像化後、連結オブジェクトの数、オブジェクトの面積を計算し、細線化処理を実施してクラスタ数nを取得する。
+    画像化後、連結オブジェクトの数、オブジェクトの面積を計算し、細線化処理を実施して初期重心とクラスタ数nを取得する。
     
     画像が荒すぎず細かすぎないビン境界を指定したい。
     ビン境界が高くなるとヒストグラムの区切る範囲が細かくなるのでデータが画像化された時の解像度が高くなり面積は小さくなる。
@@ -207,7 +207,7 @@ Slingshotでは、次元削減後のデータをクラスタリングし、そ�
         \textbf{d} 境界ビンに5を指定した時の画像
     \end{tcolorbox}
     \item 細線化処理\\
-    データの大まかな輪郭から木構造を作り、その木構造の葉と分岐の数をクラスタ数nとする。
+    データの大まかな輪郭から木構造を作り、その木構造の葉と分岐の点を初期重心とし、その数をクラスタ数nとする。
     画像の輪郭から木構造を構築するために、細線化を使用する。
     細線化は、2値画像の画素領域を外側から削減し、幅1画素の線画像に変換する処理である[11]（図6）。
     これにより、物体を中心線で表現でき、物体固有の特徴を把握することができる。
@@ -399,13 +399,28 @@ Monocle3は細胞の軌道を滑らかにフィッティングするわけでは
 制約をつけることにより細胞の軌道分岐の認識能力が向上した。
 
 \subsection{予測精度}\label{subsec-instruction-5}
-本研究の予測精度を検証するために、Hematopoiesisのデータを用いて細胞の兄弟関係予測を実施した。
-HematopoiesisデータにはDNAバーコーディング情報が含まれており、細胞の兄弟関係を記録することができる。
-HematopoiesisデータのDNAバーコーディング情報とシーケンスデータに基づき、CoSparを用いて細胞状態の遷移予測を行った結果と、
-本研究によるクラスタリング後の最小全域木の結果を比較した。各クラスタ間の兄弟関係を正確に認識できているかを検証した。
+本研究の予測精度を検証するために、Hematopoiesisのデータを用いて細胞クラスタ系統予測精度を制約有りと無しで比較した。
+検証に使用したHematopoiesisデータにはDNAバーコーディング情報が含まれている。
+DNAバーコーディングとは個々の細胞に固有のDNA配列(バーコード)を挿入することで、細胞の系譜や分化過程を追跡する技術である。DNAバーコーディングされた細胞が分裂したとしてもバーコーディング情報は分裂後の細胞に継承されるので細胞の系譜を解析することができる。
+CoSpar[5]はDNAバーコーディング情報とシーケンスデータを用いて細胞の系譜を解析することができるツールである。
+HematopoiesisデータのDNAバーコーディング情報とシーケンスデータに基づき、CoSparを用いて細胞状態の遷移予測を行った結果(図13)と、
+本研究によるクラスタリング後の最小全域木の結果を比較した。
+最小全域木の各クラスタがCoSparが予測した各細胞状態にうまく当てはまっているのかを調べた。
 各細胞状態ごとの正答率の平均を最終的な精度として使用した。
 表2に結果を記載した。
 制約によってデータの約60\%の兄弟関係を予測でき、制約無しと比較して約20\%認識能力が向上した。
+\begin{tcolorbox}[colframe=black!70, colback=white, boxrule=0.2mm, width=\textwidth, arc=2mm]
+  \begin{center}
+      \includegraphics[width=\textwidth]{./img/Slide10.jpg}
+      \includegraphics[width=\textwidth]{./img/Slide11.jpg}
+  \end{center}
+    \scriptsize % ここでフォントサイズを小さくします
+    \textbf{図12:} Monocle3とSlingshotの解析結果の比較図。C. elegansのデータを使用している。
+  \textbf{a} 制約有りのSlingshotの解析結果
+  \textbf{b} Slingshotの解析結果
+  \textbf{c} Monocle3の解析結果
+\end{tcolorbox}
+
   \begin{table}[h]
   \centering
   \scriptsize % ここでフォントサイズを小さくします
@@ -431,14 +446,12 @@ HematopoiesisデータのDNAバーコーディング情報とシーケンスデ�
   \end{table}
   \begin{tcolorbox}[colframe=black!70, colback=white, boxrule=0.2mm, width=\textwidth, arc=2mm]
     \begin{center}
-        \includegraphics[width=\textwidth]{./img/Slide10.jpg}
-        \includegraphics[width=\textwidth]{./img/Slide11.jpg}
+      \includegraphics[width=\textwidth]{./img/Slide26.png}
     \end{center}
-      \scriptsize % ここでフォントサイズを小さくします
-      \textbf{図12:} Monocle3とSlingshotの解析結果の比較図。C. elegansのデータを使用している。
-    \textbf{a} 制約有りのSlingshotの解析結果
-    \textbf{b} Slingshotの解析結果
-    \textbf{c} Monocle3の解析結果
+  \scriptsize % ここでフォントサイズを小さくします
+  \textbf{図13:} Hematopoiesisのデータを用いたcosparでの系統予測結果
+    \textbf{a} 各クラスタの細胞状態の系統予測結果
+    \textbf{b} ラベリングされた細胞データ
   \end{tcolorbox}
   \clearpage
 
@@ -454,14 +467,14 @@ HematopoiesisデータのDNAバーコーディング情報とシーケンスデ�
 \subsection{Human fetal immune cell}\label{data-13}
 ヒト胎児免疫データセットである。
 データセットのうち検証にはNK細胞関連のデータのみを使用している。
-(データは次のリンクからダウンロードできる:\url{https://github.com/alexQiSong/scSTEM_sample_data/tree/master/human_fetal_immune})
+(データは次のリンクからダウンロードできる:\url{https://github.com/alexQiSong/scSTEM_sample_data/tree/master/}\\\url{human_fetal_immune})
 データの前処理にはscSTEMを使用した。scSTEMはシングルセルRNAシーケンシングデータの疑似時間順序に基づいて遺伝子の動的プロファイルをクラスタリングする方法である[8]。
 scSTEMを用いて得られた前処理結果を使用した。
 
 \subsection{Hematopoiesis}\label{data-14}
 本scSeqを使用してDNAバーコードで細胞をクローン的にタグ付けしたマウス造血データである[6]。
 系統追跡と統合された単一細胞トランスクリプトミクスから細胞ダイナミクスを推測することができるCoSpar[5]を用いて前処理を行った。
-(前処理の方法については、次のリンクを参照して実施した:\url{https://cospar.readthedocs.io/en/latest/20210121_all_hematopoietic_data_v3.html})
+(前処理の方法については、次のリンクを参照して実施した:\url{https://cospar.readthedocs.io/en/latest/20210121_all_hematopoietic_data_}\\v3.html)
 DNAバーコードは、特定のDNA領域にランダムな挿入するバーコードのことである。挿入されたバーコードを細胞が分裂するたびに引き継ぐことにより細胞の系統的な起源を識別することができる[14]。
 
 \subsection{C. elegans}\label{data-16}
@@ -471,10 +484,10 @@ DNAバーコードは、特定のDNA領域にランダムな挿入するバー�
 \newpage
 \section{議論}\label{sec-11}
 \subsection{クラスタ数と分岐認識能力}\label{subsec-22}
-クラスタ数の変化は小全域木の形に影響を与えることでSlingshotの軌道予測結果を変化させる。
-図13にクラスタ数による最小全域木の比較を記載した。
-自動決定されたクラスタ数76(図13.a)を基準として考えると、クラスタ数35(図13.b)の場合はクラスタ数が小さすぎるので細かな分岐が１つのクラスタとして認識され分岐がうまく認識されない。
-一方クラスタ数100(図13.c)の場合は、クラスタ数が大きくクラスタ数76(図13.a)には無い分岐が発生している。
+クラスタ数の変化は最小全域木の形に影響を与えることでSlingshotの軌道予測結果を変化させる。
+図14にクラスタ数による最小全域木の比較を記載した。
+自動決定されたクラスタ数76(図14.a)を基準として考えると、クラスタ数35(図14.b)の場合はクラスタ数が小さすぎるので細かな分岐が１つのクラスタとして認識され分岐がうまく認識されない。
+一方クラスタ数100(図14.c)の場合は、クラスタ数が大きくクラスタ数76(図14.a)には無い分岐が発生している。
 クラスタ数を適度な範囲に設定することは軌道予測において重要であることが示されている。
 
 
@@ -491,7 +504,7 @@ DNAバーコードは、特定のDNA領域にランダムな挿入するバー�
     \includegraphics[width=\textwidth]{./img/Slide9.jpg}
   \end{center}
 \scriptsize % ここでフォントサイズを小さくします
-\textbf{図13:} クラスタ数による最小全域木の比較図。Hematopoiesisのデータを使用している。
+\textbf{図14:} クラスタ数による最小全域木の比較図。Hematopoiesisのデータを使用している。
   \textbf{a} クラスタ数76
   \textbf{b} クラスタ数35
   \textbf{c} クラスタ数100
@@ -607,8 +620,10 @@ DNAバーコードは、特定のDNA領域にランダムな挿入するバー�
 本手法は従来手法の課題を解決し、より解釈しやすい細胞系統擬似時間解析を実現するものであり、今後の細胞系譜研究において重要な貢献を果たすと考えられる。
 \newpage
 \acknowledgments				% 謝辞
-本研究を進めるにあたり御指導、御助言を賜り、暖かく見守ってくださった阿久津達也教授に深く感謝いたします。日頃から数々の有益な御助言、御協力をいただきました情報学研究科の皆様に深く感謝いたします。
-さらに、本研究を行うにあたり、有益な協力をいただいた香港大学博士課程 Jiaying Zhao 氏にも、深く感謝しここに誠意を表します。
+本研究を進めるにあたり御指導、御助言を賜り、暖かく見守ってくださった阿久津達也教授に深く感謝いたします。
+また副査としてご助言を戴くとともに本論文の細部にわたりご指導を戴いた田村武幸先生、細川浩先生に深く感謝いたします。
+さらに本研究を行うにあたり、有益な協力を戴いた香港大学博士課程 Jiaying Zhao 氏に深く感謝いたします。
+日頃から数々の有益な御助言、御協力を戴きました情報学研究科の皆様に深く感謝しここに誠意を表します。
 \end{spacing}
 \nocite{*}
 \bibliographystyle{kuisunsrt}			% 文献スタイルの指定
