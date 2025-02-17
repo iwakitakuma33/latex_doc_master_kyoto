@@ -1,0 +1,48 @@
+\begin{thebibliography}{10}
+
+\bibitem{art1}
+坂本智子, 前伸一, 長船健二, 岡田千尋, 樺井良太朗, 渡辺亮: 細胞運命決定機構を明らかにするシングルセル遺伝子発現解析, 日本薬理学雑誌,  Vol.~153--2, pp.\ 61--66 (2019).
+
+\bibitem{art2}
+仲嶋なつ: シングルセル解析の動向と展望, {\em JSBi Bioinformatics Review\/},  Vol.~3--2, pp.\ 61--74 (2022).
+
+\bibitem{art3}
+K.Street, D.Risso, B.Russell, D.Diya, N.John, Y.Nir, P.Elizabeth and D.Sandrine: Slingshot: cell lineage and pseudotime inference for single-cell transcriptomics, {\em BMC Genomics\/},  Vol.~19--447 (2018).
+
+\bibitem{art4}
+D.Welch, J.Hartemink and F.Prins: SLICER: inferring branched, nonlinear cellular trajectories from single cell RNA-seq data, {\em BMC Genomics\/},  Vol.~17--106 (2016).
+
+\bibitem{art5}
+W.Shou-When, J.Herriges, H.Kilian, N.Kotton and M.Klein: CoSpar identifies early cell fate biases from single-cell transcriptomic and lineage information, {\em Nature Biotechnology\/},  Vol.~40, pp.\ 1066--1074 (2022).
+
+\bibitem{art6}
+C.Weinreb, A.Rodriguez-Fraticelli, F.D.Camargo and A.M.Klein: Lineage tracing on transcriptional landscapes links state to fate during differentiation, {\em Science\/},  Vol.~367 (2020).
+
+\bibitem{art7}
+K.Dominik, P.Giovanni, L.Marius, K.Michal, P.Zoe, G.Manuel, M.Laetitia, S.Michael, S.Lama, J.Changying, B.Aim^^c3^^a9e, C.Perla, T.Marta, P.Shrey, G.Ilan, L.Heiko, B.Mostafa, N.Mor, C.Marco and J.Theis: Multimodal cell mapping with optimal transport, {\em Nature\/},  Vol.~22 (2025).
+
+\bibitem{art8}
+S.Qi, W.Jingtao and B.Ziv: scSTEM: clustering pseudotime ordered single-cell data, {\em BMC Genomics\/},  Vol.~23--150 (2022).
+
+\bibitem{art9}
+Q.Xiaojie, M.Qi, T.Ying, W.Li, C.Raghav, A.P.Hannah and T.Cole: Reversed graph embedding resolves complex single-cell trajectories, {\em Nature Methods\/},  Vol.~14, pp.\ 979--982 (2017).
+
+\bibitem{art10}
+S.P.Jonathan, Z.Qin, H.Chau, S.Priya, P.Elicia, D.Hannah, S.Derek, T.Kai, T.Cole, K.Junhyong, H.W.Robert and I.M.John: A lineage-resolved molecular atlas of C. elegans embryogenesis at single-cell resolution, {\em Science\/},  Vol.~20--365 (2019).
+
+\bibitem{art11}
+N.Nabil and S.Rajjan: An investigation into the skeletonization approach of hilditch, {\em Pattern Recognition\/},  Vol.~17, pp.\ 279--284 (1984).
+
+\bibitem{art12}
+岡本吉央: 完全双対整数性：全域木 (1), 電気通信大学講義スライド, p.~9 (2014).
+
+\bibitem{art13}
+上原隆平: 計算幾何学特論 凸包, 北陸先端科学技術大学院大学講義スライド, p.~2 (2014).
+
+\bibitem{art14}
+IkSooKim: DNA Barcoding Technology for Lineage Recording and Tracing to Resolve Cell Fate Determination, {\em Cells\/},  Vol.~13 (2024).
+
+\bibitem{art15}
+G.Mehdi: Integer Programming Formulations for Minimum Spanning ForestForest Problem, {\em The University of Arizona, College of Science Mathematics Lecture Slides\/}, p.~11 (2014).
+
+\end{thebibliography}

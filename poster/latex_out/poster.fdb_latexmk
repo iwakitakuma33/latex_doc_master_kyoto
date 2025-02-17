@@ -1,0 +1,14 @@
+# Fdb version 4
+["dvipdf"] 0 "latex_out/poster.dvi" "latex_out/poster.pdf" "latex_out/poster" 0 -1
+  "latex_out/poster.dvi" 0 -1 0 "latex"
+  (generated)
+  "latex_out/poster.pdf"
+  (rewritten before read)
+["latex"] 0 "/Users/iwakitakuma/study_latex/poster/poster.tex" "latex_out/poster.dvi" "poster" 0 -1
+  "/Users/iwakitakuma/study_latex/poster/poster.tex" 0 -1 0 ""
+  "latex_out/poster.aux" 0 -1 0 "latex"
+  (generated)
+  "latex_out/poster.aux"
+  "latex_out/poster.dvi"
+  "latex_out/poster.log"
+  (rewritten before read)
