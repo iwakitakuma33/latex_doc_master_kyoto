@@ -52,7 +52,7 @@ We solved this problem by using image processing to automatically determine the 
 Specifically, the following methods are used to analyze the data.
   Single Cell RNA-seq data reduced to two dimensions are recognized as images using histograms.
   The rough tree structure is computed by performing a skeletonization process on the image.
-  Determine the initial center of gravity and number of clusters to use for clustering single-cell RNA sequencing data by examining the branch and leaf points and their number in the tree structure.
+  Then, the initial center of gravity and the number of clusters to be used for clustering single-cell RNA sequencing data are determined by examining the branch and leaf points and their number in the tree structure.
   By clustering the Single Cell RNA-seq data and constructing a degree-limited minimum spanning tree using the center of gravity and the determined number of clusters
   , the transition structure of the cellular state is constructed considering the biological assumption that cellular states transition no more than three ways simultaneously.
   The resulting minimum spanning tree is fitted to a curve with a principal curve to obtain a cellular phylogenetic pseudo-time trajectory.
